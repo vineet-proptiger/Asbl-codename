@@ -43,7 +43,7 @@ const Gallery = ({ setIsOpen }) => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           {galleryImages.map((img, idx) => (
             <div
               key={idx}
@@ -73,7 +73,7 @@ const Gallery = ({ setIsOpen }) => {
                   transition: 'transform 0.5s ease',
                   transform: hovered === idx ? 'scale(1.08)' : 'scale(1)'
                 }}
-                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
 
               {/* Hover overlay */}

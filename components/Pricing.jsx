@@ -7,7 +7,6 @@ const PRIMARY = "var(--color-primary)";
 const units = [
   {
     type: "3 Bedroom+ Type A",
-    subtitle: "Senior Living Residences at Estate 361, Gurgaon",
     size: "On Request",
     price: "₹ 2.25 Cr* Onwards",
     oldPrice: null,
@@ -15,9 +14,7 @@ const units = [
     features: [
       "Senior-friendly features",
       "Fully-finished residences",
-      "Wraparound balcony with living room",
-      "Exclusive corner apartments",
-      "Separation of guest areas and living spaces"
+      "Wraparound balcony with living room"
     ],
     isPopular: false,
   },

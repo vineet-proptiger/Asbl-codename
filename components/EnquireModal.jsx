@@ -47,7 +47,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
 
         {/* LEFT — Image */}
         <div className="hidden sm:block sm:w-[45%] shrink-0 relative min-h-[480px]">
-          <Image src={popupImage} alt="Shivalik Trophy" fill className="object-cover" sizes="(max-width: 768px) 0vw, 45vw" />
+          <Image src={popupImage} alt="Shivalik Trophy" fill className="object-cover" style={{ objectPosition: '30% center' }} sizes="(max-width: 768px) 0vw, 45vw" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,26,46,0.85) 0%, rgba(26,26,46,0.1) 60%)' }} />
           <div className="absolute bottom-0 left-0 right-0 p-5 text-white z-10">
             <p className="text-[10px] font-semibold tracking-[3px] uppercase opacity-80 mb-1" style={{ fontFamily: F_SANS, color: 'var(--color-gold)' }}>SHIVALIK TROPHY</p>

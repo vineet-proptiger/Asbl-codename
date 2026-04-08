@@ -110,7 +110,7 @@ const Hero = ({ setIsOpen }) => {
                 letterSpacing: '0.02em'
               }}
                 data-aos="fade-up" data-aos-delay="300">
-                Many habits, one habitat — Sub-Tehsil, Harsaru, Sector 36A, Gurugram, Haryana 122006
+                Many habits, one habitat — Sector 36A, Gurugram, Haryana 122006
               </p>
             </div>
 
@@ -120,7 +120,7 @@ const Hero = ({ setIsOpen }) => {
               {[
                 '3 & 4 BHK + Penthouses',
                 'IGBC Platinum Certified',
-                'Harsaru, Sector 36A, Gurugram 122006'
+                'Sector 36A, Gurugram 122006'
               ].map((tag, i) => (
                 <span key={i} style={{
                   display: 'inline-block',

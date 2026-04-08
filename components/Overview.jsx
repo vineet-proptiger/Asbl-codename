@@ -125,7 +125,7 @@ const EarlyForm = () => {
         </label>
         <input
           name="email" value={form.email} onChange={handle}
-          placeholder="Email Id(optional)"
+          placeholder="Email Id (optional)"
           onFocus={() => setFocused('email')}
           onBlur={() => setFocused('')}
           style={{

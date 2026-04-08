@@ -137,7 +137,7 @@ const Highlights = ({ setIsOpen }) => (
           color: '#111827', margin: 0, letterSpacing: '-0.01em',
         }}>
           Key Highlights:{' '}
-          <span style={{ color: 'var(--color-gold)' }}>Why Estate 361?</span>
+          <span style={{ color: 'var(--color-gold)' }}>Why Max Estate 361?</span>
         </h2>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
           <span style={{

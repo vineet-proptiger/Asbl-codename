@@ -41,7 +41,7 @@ const Amenities = ({ setIsOpen }) => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {amenityImages.map((item, idx) => (
             <div
               key={idx}
@@ -55,7 +55,7 @@ const Amenities = ({ setIsOpen }) => {
                 borderRadius: '14px',
                 overflow: 'hidden',
                 cursor: 'pointer',
-                aspectRatio: '16/10',
+                aspectRatio: '16/11',
                 border: `2px solid ${hovered === idx ? 'var(--color-gold)' : 'transparent'}`,
                 boxShadow: hovered === idx
                   ? '0 14px 36px var(--color-shadow-inner)'
@@ -72,7 +72,7 @@ const Amenities = ({ setIsOpen }) => {
                   transition: 'transform 0.5s ease',
                   transform: hovered === idx ? 'scale(1.08)' : 'scale(1)',
                 }}
-                sizes="(max-width: 768px) 100vw, 33vw"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
               />
 
               {/* Always-visible gradient label */}
