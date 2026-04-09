@@ -7,7 +7,7 @@ const PRIMARY = "var(--color-primary)";
 const units = [
   {
     type: "1.5 BHK Floor Plan",
-    size: "On Request",
+    size: "1,144 sq ft",
     price: "₹ 2.5 Cr* Onwards",
     oldPrice: null,
     btnText: "Get Cost Sheet",
@@ -20,7 +20,7 @@ const units = [
   },
   {
     type: "2 BHK Floor Plan",
-    size: "On Request",
+    size: "1,565 sq ft",
     price: "Ask For Price",
     oldPrice: null,
     btnText: "Ask Price",
@@ -33,7 +33,7 @@ const units = [
   },
   {
     type: "3 BHK Floor Plan",
-    size: "On Request",
+    size: "1700 sq ft",
     price: "Ask For Price",
     oldPrice: null,
     btnText: "Ask Price",

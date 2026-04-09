@@ -145,11 +145,10 @@ const Hero = ({ setIsOpen }) => {
               boxShadow: '0 6px 20px var(--color-shadow-inner)',
             }} data-aos="fade-up" data-aos-delay="400">
               {[
-                '2,50,000+ Sq Ft of Lush Green Forest',
-                '1,000+ Native Plants across 50+ Species',
-                'IGBC Platinum Pre-Certified Development',
-                'Integrated Senior Living by Antara',
-                'Starting from ₹ 2.5 Cr — Limited Units',
+                'Exclusive New Tower Launch',
+                'Dedicated 1.2 Lakh Club House',
+                'EOI Amount at ₹ 25 Lakh',
+                '1.5 & 2 BHK Luxury Residences',
               ].map((item, i, arr) => (
                 <div key={i}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 0' }}>
