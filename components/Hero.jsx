@@ -118,7 +118,7 @@ const Hero = ({ setIsOpen }) => {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'center' }}
               data-aos="fade-up" data-aos-delay="320">
               {[
-                '3 & 4 BHK + Penthouses',
+                'Terraces at Max Estate 361',
                 'IGBC Platinum Certified',
                 'Sector 36A, Dwarka Expressway, Gurugram'
               ].map((tag, i) => (
@@ -149,7 +149,7 @@ const Hero = ({ setIsOpen }) => {
                 '1,000+ Native Plants across 50+ Species',
                 'IGBC Platinum Pre-Certified Development',
                 'Integrated Senior Living by Antara',
-                'Starting from ₹ 2.25 Cr — Limited Units',
+                'Starting from ₹ 2.5 Cr — Limited Units',
               ].map((item, i, arr) => (
                 <div key={i}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 0' }}>
@@ -207,7 +207,7 @@ const Hero = ({ setIsOpen }) => {
                   fontFamily: F_JOST,
                   lineHeight: 1,
                 }}>
-                  ₹ 2.25 Cr* Onwards
+                  ₹ 2.5 Cr* Onwards
                 </span>
               </div>
             </div>

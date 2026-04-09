@@ -1,6 +1,8 @@
 import './globals.css'
 import { Open_Sans, Montserrat, Cormorant_Garamond } from 'next/font/google'
 import localFont from 'next/font/local'
+import { GoogleTagManager } from '@next/third-parties/google'
+import Script from 'next/script'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -30,14 +32,20 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  title: 'Max Estate 361 | Luxury 3 & 4 BHK + Penthouses — Sector 36A, Dwarka Expressway, Gurugram',
+  title: 'Max Estate 361 | Luxury 1.5 & 2 BHK + Penthouses — Sector 36A, Dwarka Expressway, Gurugram',
   description: 'Max Estate 361 — Forest living residences by Max Estates in Sector 36A, Dwarka Expressway, Gurugram. 3 BHK, 4 BHK & Double-Storey Penthouses starting ₹6.65 Cr*. IGBC Platinum Pre-Certified. 2,50,000+ sq ft of lush greens.',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-NWR7SPL4" />
       <body className={`${openSans.variable} ${montserrat.variable} ${cormorant.variable} ${nephilm.variable} font-sans text-dark antialiased`}>
+        <Script id="gtag-init" strategy="beforeInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());`}
+        </Script>
         {children}
       </body>
     </html>

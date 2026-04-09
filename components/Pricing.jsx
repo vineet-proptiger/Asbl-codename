@@ -8,13 +8,13 @@ const units = [
   {
     type: "3 Bedroom+ Type A",
     size: "On Request",
-    price: "₹ 2.25 Cr* Onwards",
+    price: "₹ 2.5 Cr* Onwards",
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [
-      "Senior-friendly features",
-      "Fully-finished residences",
-      "Wraparound balcony with living room"
+      "Limited Pre-Launch Inventory",
+      "Attractive Payment Plan",
+      "Premium Residence"
     ],
     isPopular: false,
   },
@@ -25,9 +25,9 @@ const units = [
     oldPrice: null,
     btnText: "Ask Price",
     features: [
-      "Senior-friendly features",
-      "Fully-finished residences",
-      "Wraparound balcony with living room"
+      "Limited Pre-Launch Inventory",
+      "Attractive Payment Plan",
+      "Premium Residence"
     ],
     isPopular: true,
   },
@@ -38,9 +38,9 @@ const units = [
     oldPrice: null,
     btnText: "Ask Price",
     features: [
-      "Senior-friendly features",
-      "Fully-finished residences",
-      "Wraparound balcony with living room"
+      "Limited Pre-Launch Inventory",
+      "Attractive Payment Plan",
+      "Premium Residence"
     ],
     isPopular: false,
   },

@@ -162,7 +162,7 @@ const Location = () => {
                 background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', zIndex: 10,
               }} />
               <iframe
-                src="https://maps.google.com/maps?q=Estate+360+by+Max+Estates,+Sector+36A,+Gurugram,+Haryana+122006&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.923298664431!2d76.9607197754931!3d28.421571175780706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d17eb26869435%3A0xe3c46a5eec0e1542!2sEstate%20361%20by%20Max%20Estates!5e0!3m2!1sen!2sin!4v1775727342983!5m2!1sen!2sin"
                 width="100%" height="100%"
                 style={{ border: 0, minHeight: '420px', display: 'block' }}
                 allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"

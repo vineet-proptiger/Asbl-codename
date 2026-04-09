@@ -20,7 +20,7 @@ const ProjectLogo = () => (
   <img
     src="/images/logo/estate361logo.webp"
     alt="Max Estate 361"
-    className="h-16 w-auto object-contain"
+    className="h-10 md:h-16 w-auto object-contain transition-all"
     style={{ maxWidth: '250px' }}
   />
 )
@@ -67,9 +67,12 @@ const Navbar = ({ setIsOpen }) => {
             Enquire Now <span className="text-base leading-none">→</span>
           </button>
 
-          {/* Mobile */}
           <div className="lg:hidden flex items-center gap-3">
-            <button onClick={() => setMobileOpen(!mobileOpen)} className="text-[var(--color-text-mid)] p-1">
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="text-[var(--color-text-mid)] p-1.5 border border-gray-200 rounded-md hover:bg-gray-50 transition-colors"
+              aria-label="Toggle Menu"
+            >
               {mobileOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
