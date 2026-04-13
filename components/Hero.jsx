@@ -106,6 +106,10 @@ const Hero = ({ setIsOpen }) => {
                 {/* ASBL Codename*/}
                 ASBL RTC Crossroad
               </h1>
+              {/* Hidden SEO Text */}
+              <span style={{ fontSize: '1px', opacity: 0, position: 'absolute', pointerEvents: 'none', userSelect: 'none' }}>
+                ASBL Codename Legacy
+              </span>
               <p style={{
                 fontFamily: F_SANS, fontSize: '13px', color: '#6b7280', margin: 0,
                 letterSpacing: '0.02em'
