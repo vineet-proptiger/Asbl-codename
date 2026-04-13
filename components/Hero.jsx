@@ -38,7 +38,7 @@ const Hero = ({ setIsOpen }) => {
             >
               {slides.map((src, idx) => (
                 <div key={idx} style={{ width: `${100 / slides.length}%`, flexShrink: 0, position: 'relative' }}>
-                  <Image src={src} alt={`Max Estate 361 ${idx + 1}`} fill className="object-cover"
+                  <Image src={src} alt={`ASBL Codename ${idx + 1}`} fill className="object-cover"
                     priority={idx === 0} sizes="(max-width: 1024px) 100vw, 62vw" />
                 </div>
               ))}
@@ -63,7 +63,7 @@ const Hero = ({ setIsOpen }) => {
 
           {/* ── Top Banner ── */}
           <div style={{
-            background: 'linear-gradient(135deg, #111827 0%, #1f2937 100%)',
+            background: 'linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%)',
             color: '#fff',
             textAlign: 'center',
             padding: '11px 16px',
@@ -103,52 +103,51 @@ const Hero = ({ setIsOpen }) => {
                 textTransform: 'uppercase', letterSpacing: '0.02em'
               }}
                 data-aos="fade-up" data-aos-delay="200">
-                Max Estate 361
+                {/* ASBL Codename*/}
+                ASBL RTC Crossroad
               </h1>
               <p style={{
                 fontFamily: F_SANS, fontSize: '13px', color: '#6b7280', margin: 0,
                 letterSpacing: '0.02em'
               }}
                 data-aos="fade-up" data-aos-delay="300">
-                Many habits, one habitat — Sector 36A,Dwarka Expressway Gurugram
+                New Launch @ RTC X Cross Road
               </p>
             </div>
 
-            {/* ── Specs Pill Tags ── */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'center' }}
+            {/* ── Tagline Pills ── */}
+            <div style={{
+              background: 'var(--color-gold-bg)',
+              borderRadius: '12px',
+              padding: '14px 18px',
+              textAlign: 'center',
+              border: '1px solid var(--color-gold-light)',
+            }}
               data-aos="fade-up" data-aos-delay="320">
               {[
-                'Terraces at Max Estate 361',
-                'IGBC Platinum Certified',
-                'Sector 36A, Dwarka Expressway, Gurugram'
+                'Live at the Heart of Hyderabad',
+                'Sky-High Luxury Residences',
+                'Elite Living at RTC X Roads',
               ].map((tag, i) => (
-                <span key={i} style={{
-                  display: 'inline-block',
-                  padding: '4px 12px',
-                  borderRadius: '50px',
-                  fontSize: '11px',
-                  fontFamily: F_SANS,
-                  fontWeight: '600',
-                  background: 'var(--color-gold-bg)',
-                  color: 'var(--color-gold-dark)',
-                  border: '1px solid var(--color-gold-light)',
-                  letterSpacing: '0.01em',
-                }}>{tag}</span>
+                <p key={i} style={{
+                  fontFamily: F_JOST, fontSize: '14px',
+                  fontWeight: '600', color: 'var(--color-primary)',
+                  margin: i === 0 ? '0' : '4px 0 0', letterSpacing: '0.01em',
+                }}>{tag}</p>
               ))}
             </div>
 
-            {/* ── Teal-Cyan Highlights Box ── */}
+            {/* ── Highlights Box ── */}
             <div style={{
-              background: 'linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%)',
+              background: 'linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%)',
               borderRadius: '12px',
               padding: '4px 14px',
               boxShadow: '0 6px 20px var(--color-shadow-inner)',
             }} data-aos="fade-up" data-aos-delay="400">
               {[
-                'Exclusive New Tower Launch',
-                'Dedicated 1.2 Lakh Club House',
-                'EOI Amount at ₹ 25 Lakh',
-                '1.5 & 2 BHK Luxury Residences',
+                'Iconic high-rise skyline living',
+                'Prime central city address',
+                'Smart layouts with premium finish',
               ].map((item, i, arr) => (
                 <div key={i}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 0' }}>
@@ -176,6 +175,17 @@ const Hero = ({ setIsOpen }) => {
               ))}
             </div>
 
+            {/* ── Apartment Type ── */}
+            <div style={{ textAlign: 'center' }} data-aos="fade-up" data-aos-delay="450">
+              <p style={{
+                fontFamily: F_JOST, fontSize: '16px', fontWeight: '700',
+                color: 'var(--color-primary)', margin: '0',
+                letterSpacing: '0.01em',
+              }}>
+                3 & 4 BHK Luxury Apartments Starts
+              </p>
+            </div>
+
             {/* ── Pricing ── */}
             <div style={{
               textAlign: 'center',
@@ -183,12 +193,6 @@ const Hero = ({ setIsOpen }) => {
               borderRadius: '10px',
               padding: '12px 16px',
             }} data-aos="fade-up" data-aos-delay="500">
-              <p style={{
-                fontFamily: F_SANS, fontSize: '12px', color: '#6b7280',
-                margin: '0 0 6px', textTransform: 'uppercase', letterSpacing: '0.12em', fontWeight: '700'
-              }}>
-                Starting From
-              </p>
               <div className="flex items-center justify-center gap-4 flex-wrap">
                 <span style={{
                   fontSize: '18px',
@@ -198,7 +202,7 @@ const Hero = ({ setIsOpen }) => {
                   textDecoration: 'line-through',
                   fontFamily: F_JOST,
                 }}>
-                  ₹ 2.6 Cr
+                  ₹ 1.9 Cr*
                 </span>
                 <span className="blink-price text-[18px] sm:text-[32px]" style={{
                   fontWeight: '700',
@@ -206,21 +210,31 @@ const Hero = ({ setIsOpen }) => {
                   fontFamily: F_JOST,
                   lineHeight: 1,
                 }}>
-                  ₹ 2.5 Cr* Onwards
+                  1.8 Cr*
                 </span>
               </div>
             </div>
 
+            {/* ── Hurry Text ── */}
+            <p style={{
+              textAlign: 'center',
+              fontFamily: F_JOST, fontSize: '13px', fontWeight: '700',
+              color: 'var(--color-gold)', margin: '0',
+              letterSpacing: '0.02em',
+            }} data-aos="fade-up" data-aos-delay="520">
+              Hurry! Limited Inventory At This Price
+            </p>
+
             {/* ── CTA Button ── */}
             <button onClick={() => setIsOpen(true)}
-              className="btn-gold"
+              className="btn-primary"
               style={{ width: '100%', padding: '14px', fontSize: '14px', letterSpacing: '0.1em' }}
               data-aos="fade-up" data-aos-delay="600">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
                 strokeLinecap="round" strokeLinejoin="round">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              Download Brochure
+              Enquire Now
             </button>
 
             {/* ── Trust Badges ── */}

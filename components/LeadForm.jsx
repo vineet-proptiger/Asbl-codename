@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
 import { getGeo, buildTrackingFields } from '../lib/formMeta'
+import Link from 'next/link'
 
 const GOLD = 'var(--color-gold)'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
@@ -25,11 +26,14 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
     })
   }, [])
 
-  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value })
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: name === 'phone' ? value.replace(/\D/g, '') : value })
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    if (!formData.phone || formData.phone.length < 10) { setError('Please enter a valid 10-digit mobile number.'); return }
+    if (!/^\d{10}$/.test(formData.phone)) { setError('Please enter a valid 10-digit mobile number.'); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields(ipAddress, geoAddress)
     const payload = new FormData()
@@ -88,9 +92,9 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details' }) => {
       {error && <p className="text-red-500 text-xs mt-1" style={{ fontFamily: F_SANS }}>{error}</p>}
 
       <div className="flex items-start gap-2 mt-3">
-        <input type="checkbox" id="privacy-lead" required defaultChecked className="mt-0.5 shrink-0" style={{ accentColor: GOLD }} />
+        <input type="checkbox" id="privacy-lead" required defaultChecked className="mt-0.5 shrink-0" style={{ accentColor: '#3b82f6' }} />
         <label htmlFor="privacy-lead" className="text-xs text-gray-500 leading-relaxed cursor-pointer" style={{ fontFamily: F_SANS }}>
-          I authorize the developer &amp; its representatives to contact me via Email / SMS / WhatsApp / Call. This will override DND / NDNC settings.
+          I agree to receive updates as per the <Link href="/privacy-policy" className="text-blue-600 underline">Privacy Policy</Link>.
         </label>
       </div>
 

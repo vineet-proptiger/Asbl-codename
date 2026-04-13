@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
 import { getGeo, buildTrackingFields } from '../lib/formMeta'
 
@@ -25,11 +26,14 @@ const ContactForm = () => {
     })
   }, [])
 
-  const handle = (e) => setForm({ ...form, [e.target.name]: e.target.value })
+  const handle = (e) => {
+    const { name, value } = e.target
+    setForm({ ...form, [name]: name === 'phone' ? value.replace(/\D/g, '') : value })
+  }
 
   const submit = async (e) => {
     e.preventDefault()
-    if (form.phone.length < 10) { setError('Enter valid 10-digit number'); return }
+    if (!/^\d{10}$/.test(form.phone)) { setError('Enter valid 10-digit number'); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields(ipAddress, geoAddress)
     const payload = new FormData()
@@ -100,9 +104,9 @@ const ContactForm = () => {
       {error && <p style={{ color: 'red', fontSize: '12px' }}>{error}</p>}
 
       <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
-        <input type="checkbox" required defaultChecked style={{ accentColor: GOLD, marginTop: '2px', flexShrink: 0 }} />
+        <input type="checkbox" required defaultChecked style={{ accentColor: '#3b82f6', marginTop: '2px', flexShrink: 0 }} />
         <span style={{ fontSize: '12px', color: '#777', fontFamily: F_SANS, lineHeight: 1.5 }}>
-          I authorize the developer &amp; its representatives to contact me via Email / SMS / WhatsApp / Call.
+          I agree to receive updates as per the <Link href="/privacy-policy" style={{ color: '#2563eb', textDecoration: 'underline' }}>Privacy Policy</Link>.
         </span>
       </label>
 
@@ -182,7 +186,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
               </div>
               <div>
                 <h3 style={{ fontFamily: F_JOST, fontWeight: '800', fontSize: '18px', color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em' }}>
-                  Max Estate 361
+                  ASBL Codename
                 </h3>
 
               </div>
@@ -191,20 +195,20 @@ const AboutDeveloper = ({ setIsOpen }) => (
 
           {/* White Body */}
           <div style={{ padding: '24px 28px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-            <p style={{ color: '#555', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '14px', margin: '0 0 20px' }}>
-             Building spaces that inspire life, work, and well-being.
+            <p className='text-justify' style={{ color: '#555', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '14px', margin: '0 0 20px' }}>
+              Building spaces that inspire life, work, and well-being.
 
-Max Estates is committed to shaping sustainable Grade A developments across Delhi NCR, where thoughtful design meets elevated living.
+              ASBL is committed to shaping sustainable developments across Hyderabad, where thoughtful design meets elevated living.
 
-Our spaces are envisioned as more than just structures — they are vibrant ecosystems that foster collaboration, innovation, and a strong sense of community.
+              Our spaces are envisioned as more than just structures — they are vibrant ecosystems that foster collaboration, innovation, and a strong sense of community.
 
-With a carefully diversified portfolio across premium locations in NCR, spanning delivered landmarks, near-possession developments, and upcoming iconic projects, we continue to set new benchmarks in sustainable real estate.
+              With a carefully diversified portfolio across premium locations in Hyderabad, spanning delivered landmarks, near-possession developments, and upcoming iconic projects, we continue to set new benchmarks in sustainable real estate.
 
-At the heart of every development lies our singular vision: to enhance well-being and become the most preferred real estate brand in NCR.
+              At the heart of every development lies our singular vision: to enhance well-being and become the most preferred real estate brand in Hyderabad.
             </p>
 
             {/* Stats */}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '22px' }}>
+            {/* <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '22px' }}>
               {[
                 { value: '15+', label: 'Years of Experience' },
                 { value: '20+', label: 'Projects Delivered' },
@@ -220,7 +224,7 @@ At the heart of every development lies our singular vision: to enhance well-bein
                   <p style={{ fontSize: '10px', color: '#888', fontFamily: F_SANS, marginTop: '4px', fontWeight: '600', textTransform: 'uppercase', lineHeight: 1.3 }}>{stat.label}</p>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             <button onClick={() => setIsOpen(true)}
               className="btn-gold"

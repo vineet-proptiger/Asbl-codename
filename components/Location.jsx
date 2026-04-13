@@ -6,29 +6,29 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const categories = [
   {
-    label: 'Connectivity',
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M3 12h18M3 6h18M3 18h18" /></svg>,
-    items: ['IGI Airport — 20 min drive', 'Cyber City / DLF — 15 min drive', 'Ambience Mall — 10 min drive'],
+    label: 'Education',
+    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 1 3-3h7z" /></svg>,
+    items: ['Narayana Junior College – 1 km', 'St. Ann’s High School – 1.5 km', 'Osmania University – 3 km', 'Little Flower Junior College – 2 km'],
   },
   {
-    label: 'Healthcare',
+    label: 'Hospitals',
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>,
-    items: ['Medanta — The Medicity, Gurugram', 'Fortis Memorial Research Institute', 'Artemis Hospital — Sector 51'],
+    items: ['KIMS Hospital – 2 km', 'Apollo Hospital, Hyderguda – 3 km', 'Care Hospital, Nampally – 4 km', 'Yashoda Hospital, Secunderabad – 5 km'],
   },
   {
-    label: 'Metro & Transport',
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" /></svg>,
-    items: ['Sector 55-56 Metro Station — Nearby', 'Dwarka Expressway — Direct Access', 'NH-48 (Delhi-Gurugram Expressway)'],
+    label: 'Food & Shopping',
+    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" /><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" /></svg>,
+    items: ['RTC X Roads Shopping Hub – Nearby', 'City Center Mall – 3 km', 'GVK One Mall, Banjara Hills – 6 km', 'Abids & Koti Markets – 2–3 km'],
   },
   {
-    label: 'Education & Lifestyle',
-    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>,
-    items: ['Delhi Public School — Sector 45', 'GD Goenka World School — Nearby', 'Premium Malls, Dining & Entertainment'],
-  },
-  {
-    label: 'Investment & Growth',
+    label: 'Growth Drivers',
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" /><polyline points="17 6 23 6 23 12" /></svg>,
-    items: ['Planned Global City — Adjacent', 'High Appreciation Corridor on Dwarka Expressway', 'Strong Rental Yield Potential'],
+    items: ['Proximity to Central Business District', 'Upcoming Metro Connectivity Expansion', 'High Rental Demand Zone', 'Strong Capital Appreciation Potential'],
+  },
+  {
+    label: 'Convenient Travel',
+    icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M3 12h18M3 6h18M3 18h18" /></svg>,
+    items: ['RTC X Roads – Direct Access', 'Secunderabad Railway Station – 5 km', 'MG Bus Station – 4 km', 'Rajiv Gandhi International Airport – 30 km'],
   },
 ]
 
@@ -54,7 +54,7 @@ const Location = () => {
             fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)',
             fontFamily: F_JOST, letterSpacing: '0.1em', textTransform: 'uppercase',
             border: '1px solid var(--color-gold-light)', marginBottom: '10px',
-          }}>Sector 36A,Dwarka Expressway Gurugram</span>
+          }}>RTC X Cross Road, Hyderabad</span>
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '800', fontSize: '26px',
             color: '#111827', margin: '0 0 6px', letterSpacing: '-0.01em',
@@ -162,7 +162,7 @@ const Location = () => {
                 background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', zIndex: 10,
               }} />
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.923298664431!2d76.9607197754931!3d28.421571175780706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d17eb26869435%3A0xe3c46a5eec0e1542!2sEstate%20361%20by%20Max%20Estates!5e0!3m2!1sen!2sin!4v1775727342983!5m2!1sen!2sin"
+                src="https://www.google.com/maps?cid=11734109689802454663&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA&hl=en&gl=IN&source=embed&output=embed"
                 width="100%" height="100%"
                 style={{ border: 0, minHeight: '420px', display: 'block' }}
                 allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
@@ -182,7 +182,7 @@ const Location = () => {
                   color: '#fff', fontSize: '11px', fontFamily: F_JOST,
                   fontWeight: '700', letterSpacing: '0.04em'
                 }}>
-                  Sector 36A,Dwarka Expressway Gurugram
+                  RTC X Cross Road, Hyderabad
                 </span>
               </div>
             </div>

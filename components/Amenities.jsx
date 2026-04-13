@@ -40,30 +40,41 @@ const Amenities = ({ setIsOpen }) => {
           </p> */}
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {amenityImages.map((item, idx) => (
-            <div
-              key={idx}
-              onClick={() => setLightbox(idx)}
-              onMouseEnter={() => setHovered(idx)}
-              onMouseLeave={() => setHovered(null)}
-              data-aos="fade-up"
-              data-aos-delay={idx * 60}
-              style={{
-                position: 'relative',
-                borderRadius: '14px',
-                overflow: 'hidden',
-                cursor: 'pointer',
-                aspectRatio: '16/11',
-                border: `2px solid ${hovered === idx ? 'var(--color-gold)' : 'transparent'}`,
-                boxShadow: hovered === idx
-                  ? '0 14px 36px var(--color-shadow-inner)'
-                  : '0 3px 12px rgba(0,0,0,0.09)',
-                transform: hovered === idx ? 'translateY(-5px) scale(1.01)' : 'translateY(0) scale(1)',
-                transition: 'all 0.32s cubic-bezier(0.4,0,0.2,1)',
-              }}
-            >
+        {/* Grid: Using a 12-column grid on large screens and 6 on tablets to perfectly align 7 items */}
+        <div className="grid grid-cols-1 sm:grid-cols-6 lg:grid-cols-12 gap-4">
+          {amenityImages.map((item, idx) => {
+            // Logic for spanning 7 images perfectly
+            // Desktop (12 cols): 4 + 3 = (4 * 3) + (3 * 4) = 12 + 12
+            const desktopSpan = idx < 4 ? 'lg:col-span-3' : 'lg:col-span-4';
+            
+            // Tablet (6 cols): 3 + 2 + 2 = (3 * 2) + (2 * 3) + (2 * 3) = 6 + 6 + 6
+            let tabletSpan = 'sm:col-span-6'; // default
+            if (idx < 3) tabletSpan = 'sm:col-span-2'; // 1st row: 3 items
+            else tabletSpan = 'sm:col-span-3'; // 2nd and 3rd row: 2 items each
+
+            return (
+              <div
+                key={idx}
+                onClick={() => setLightbox(idx)}
+                onMouseEnter={() => setHovered(idx)}
+                onMouseLeave={() => setHovered(null)}
+                data-aos="fade-up"
+                data-aos-delay={idx * 60}
+                className={`${desktopSpan} ${tabletSpan} transition-all duration-300`}
+                style={{
+                  position: 'relative',
+                  borderRadius: '14px',
+                  overflow: 'hidden',
+                  cursor: 'pointer',
+                  aspectRatio: '16/11',
+                  border: `2px solid ${hovered === idx ? 'var(--color-gold)' : 'transparent'}`,
+                  boxShadow: hovered === idx
+                    ? '0 14px 36px var(--color-shadow-inner)'
+                    : '0 3px 12px rgba(0,0,0,0.09)',
+                  transform: hovered === idx ? 'translateY(-5px) scale(1.01)' : 'translateY(0) scale(1)',
+                  transition: 'all 0.32s cubic-bezier(0.4,0,0.2,1)',
+                }}
+              >
               {/* Image */}
               <Image
                 src={item.img} alt={item.label} fill
@@ -79,7 +90,7 @@ const Amenities = ({ setIsOpen }) => {
               <div style={{
                 position: 'absolute', bottom: 0, left: 0, right: 0,
                 background: hovered === idx
-                  ? 'linear-gradient(to top, rgba(118, 51, 0, 0.90) 0%, transparent 80%)'
+                  ? 'linear-gradient(to top, rgba(67, 62, 108, 0.90) 0%, transparent 80%)'
                   : 'linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 70%)',
                 padding: '32px 16px 14px',
                 transition: 'background 0.32s ease',
@@ -132,8 +143,9 @@ const Amenities = ({ setIsOpen }) => {
               }}>
                 {String(idx + 1).padStart(2, '0')}
               </div>
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
 
         {/* CTA */}

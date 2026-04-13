@@ -32,8 +32,8 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  title: 'Max Estate 361 | Luxury 1.5 & 2 BHK + Penthouses — Sector 36A, Dwarka Expressway, Gurugram',
-  description: 'Max Estate 361 — Forest living residences by Max Estates in Sector 36A, Dwarka Expressway, Gurugram. 3 BHK, 4 BHK & Double-Storey Penthouses starting ₹6.65 Cr*. IGBC Platinum Pre-Certified. 2,50,000+ sq ft of lush greens.',
+  title: 'ASBL Codename  | 3 & 4 BHK Luxury Apartments — RTC X Cross Road, Hyderabad',
+  description: 'ASBL Codename  — Sky-high luxury residences at RTC X Cross Road, Hyderabad. 3 BHK & 4 BHK luxury apartments starting ₹1.8 Cr*. Iconic high-rise skyline living with premium finish and world-class amenities.',
 }
 
 export default function RootLayout({ children }) {

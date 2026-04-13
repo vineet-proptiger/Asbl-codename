@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
 import { getGeo, buildTrackingFields } from '../lib/formMeta'
 
@@ -24,11 +25,14 @@ const ContactCTA = () => {
     })
   }, [])
 
-  const handle = (e) => setForm({ ...form, [e.target.name]: e.target.value })
+  const handle = (e) => {
+    const { name, value } = e.target
+    setForm({ ...form, [name]: name === 'phone' ? value.replace(/\D/g, '') : value })
+  }
 
   const submit = async (e) => {
     e.preventDefault()
-    if (form.phone.length < 10) { setError('Enter valid 10-digit number'); return }
+    if (!/^\d{10}$/.test(form.phone)) { setError('Enter valid 10-digit number'); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields(ipAddress, geoAddress)
     const payload = new FormData()
@@ -144,9 +148,9 @@ const ContactCTA = () => {
                 {error && <p style={{ color: 'red', fontSize: '12px' }}>{error}</p>}
 
                 <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer', textAlign: 'left' }}>
-                  <input type="checkbox" required defaultChecked style={{ accentColor: GOLD, marginTop: '2px', flexShrink: 0 }} />
+                  <input type="checkbox" required defaultChecked style={{ accentColor: '#3b82f6', marginTop: '2px', flexShrink: 0 }} />
                   <span style={{ fontSize: '12px', color: '#777', fontFamily: F_SANS, lineHeight: 1.5 }}>
-                    I authorize the developer &amp; its representatives to contact me via Email / SMS / WhatsApp / Call.
+                    I agree to receive updates as per the <Link href="/privacy-policy" style={{ color: '#2563eb', textDecoration: 'underline' }}>Privacy Policy</Link>.
                   </span>
                 </label>
 

@@ -18,8 +18,8 @@ const navLinks = [
 /* ── Inline SVG Logo ─────────────────────────────────────────── */
 const ProjectLogo = () => (
   <img
-    src="/images/logo/estate361logo.webp"
-    alt="Max Estate 361"
+    src="/images/logo/logo.webp"
+    alt="ASBL Codename"
     className="h-10 md:h-16 w-auto object-contain transition-all"
     style={{ maxWidth: '250px' }}
   />

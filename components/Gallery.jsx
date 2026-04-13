@@ -18,7 +18,7 @@ const Gallery = ({ setIsOpen }) => {
       backgroundSize: '48px 48px',
       borderBottom: '1px solid #e5e7eb',
     }}>
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
 
         {/* Section Header */}
         <div style={{ marginBottom: '36px', textAlign: 'center' }} data-aos="fade-up">
@@ -43,7 +43,7 @@ const Gallery = ({ setIsOpen }) => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:gap-8">
           {galleryImages.map((img, idx) => (
             <div
               key={idx}
@@ -54,7 +54,7 @@ const Gallery = ({ setIsOpen }) => {
               data-aos-delay={idx * 40}
               style={{
                 position: 'relative',
-                aspectRatio: '4/3',
+                aspectRatio: '16/10',
                 borderRadius: '12px',
                 overflow: 'hidden',
                 cursor: 'pointer',
@@ -73,13 +73,13 @@ const Gallery = ({ setIsOpen }) => {
                   transition: 'transform 0.5s ease',
                   transform: hovered === idx ? 'scale(1.08)' : 'scale(1)'
                 }}
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                sizes="(max-width: 640px) 100vw, 50vw"
               />
 
               {/* Hover overlay */}
               <div style={{
                 position: 'absolute', inset: 0,
-                background: 'linear-gradient(to top, rgba(5, 150, 105, 0.75) 0%, transparent 55%)',
+                background: 'linear-gradient(to top, rgba(67, 62, 108, 0.75) 0%, transparent 55%)',
                 opacity: hovered === idx ? 1 : 0,
                 transition: 'opacity 0.32s ease',
                 display: 'flex', alignItems: 'flex-end', padding: '14px 12px',

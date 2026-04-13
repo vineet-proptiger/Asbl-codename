@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 
-import { Waves, Dumbbell, UtensilsCrossed, Gamepad2, Film, CalendarDays, ChefHat, ConciergeBell, BookOpen } from 'lucide-react'
+import { Building2, MapPin, Star, LayoutGrid, Users, Diamond } from 'lucide-react'
 
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
@@ -10,40 +10,28 @@ const highlightIconProps = { size: 26, strokeWidth: 1.5 }
 
 const highlights = [
   {
-    text: 'Indoor all-weather pool',
-    icon: <Waves {...highlightIconProps} />,
+    text: 'Premium high-rise towers in Central Hyderabad',
+    icon: <Building2 {...highlightIconProps} />,
   },
   {
-    text: 'The Gym',
-    icon: <Dumbbell {...highlightIconProps} />,
+    text: 'Prime location at Nallakunta near RTC X Roads',
+    icon: <MapPin {...highlightIconProps} />,
   },
   {
-    text: 'Multi-cuisine indoor and outdoor spaces',
-    icon: <UtensilsCrossed {...highlightIconProps} />,
+    text: 'World-class lifestyle & clubhouse amenities',
+    icon: <Star {...highlightIconProps} />,
   },
   {
-    text: 'The Cards/Bridge room',
-    icon: <Gamepad2 {...highlightIconProps} />,
+    text: 'Excellent connectivity to key city hubs',
+    icon: <LayoutGrid {...highlightIconProps} />,
   },
   {
-    text: 'The Theatre',
-    icon: <Film {...highlightIconProps} />,
+    text: 'Modern gated community for urban living',
+    icon: <Users {...highlightIconProps} />,
   },
   {
-    text: 'Social events calendar',
-    icon: <CalendarDays {...highlightIconProps} />,
-  },
-  {
-    text: "Comfort & convenience of 'Ghar Ka Khana'",
-    icon: <ChefHat {...highlightIconProps} />,
-  },
-  {
-    text: 'Concierge Desk',
-    icon: <ConciergeBell {...highlightIconProps} />,
-  },
-  {
-    text: 'The Reading Corner',
-    icon: <BookOpen {...highlightIconProps} />,
+    text: 'Premium construction with elegant design',
+    icon: <Diamond {...highlightIconProps} />,
   },
 ]
 
@@ -137,7 +125,7 @@ const Highlights = ({ setIsOpen }) => (
           color: '#111827', margin: 0, letterSpacing: '-0.01em',
         }}>
           Project Highlights:{' '}
-          <span style={{ color: 'var(--color-gold)' }}> Max Estate 361</span>
+          <span style={{ color: 'var(--color-gold)' }}> ASBL Codename</span>
         </h2>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
           <span style={{

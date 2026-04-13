@@ -8,8 +8,8 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const plans = [
   { label: 'Site Master Plan', img: masterplanImages.masterPlan },
-  { label: '1.5 BHK Floor Plan', img: masterplanImages.floorPlan },
-  { label: '2 BHK Floor Plan', img: masterplanImages.floorPlan },
+  { label: '3 BHK Floor Plan', img: masterplanImages.floorPlan },
+  { label: '4 BHK Floor Plan', img: masterplanImages.floorPlan },
 ]
 
 const MasterPlan = ({ setIsOpen }) => {
@@ -56,7 +56,7 @@ const MasterPlan = ({ setIsOpen }) => {
             }}>
               {/* Tab header */}
               <div style={{
-                background: 'linear-gradient(135deg, #111827, #1f2937)',
+                background: 'linear-gradient(135deg, var(--color-primary-dark), var(--color-primary))',
                 padding: '16px 20px', position: 'relative', overflow: 'hidden',
               }}>
                 <div style={{

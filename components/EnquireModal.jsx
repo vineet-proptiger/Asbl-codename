@@ -47,11 +47,11 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
 
         {/* LEFT — Image */}
         <div className="hidden sm:block sm:w-[45%] shrink-0 relative min-h-[480px]">
-          <Image src={popupImage} alt="Max estate 361" fill className="object-cover" style={{ objectPosition: '30% center' }} sizes="(max-width: 768px) 0vw, 45vw" />
+          <Image src={popupImage} alt="ASBL Codename" fill className="object-cover" style={{ objectPosition: '30% center' }} sizes="(max-width: 768px) 0vw, 45vw" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,26,46,0.85) 0%, rgba(26,26,46,0.1) 60%)' }} />
           <div className="absolute bottom-0 left-0 right-0 p-5 text-white z-10">
-            <p className="text-[10px] font-semibold tracking-[3px] uppercase opacity-80 mb-1" style={{ fontFamily: F_SANS, color: 'var(--color-gold)' }}>Max estate 361</p>
-            <p style={{ fontFamily: F_JOST, fontSize: '20px', fontWeight: 600 }}>Sector 36A,Dwarka Expressway Gurugram</p>
+            <p className="text-[10px] font-semibold tracking-[3px] uppercase mb-1" style={{ fontFamily: F_SANS, color: '#FFFFFF' }}>ASBL Codename</p>
+            <p style={{ fontFamily: F_JOST, fontSize: '20px', fontWeight: 600 }}>RTC X Cross Road, Hyderabad</p>
           </div>
         </div>
 
@@ -64,17 +64,17 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
 
           {/* Mobile strip */}
           <div className="sm:hidden w-full h-44 relative shrink-0">
-            <Image src={popupImage} alt="Max estate 361" fill className="object-cover object-top" sizes="100vw" />
+            <Image src={popupImage} alt="ASBL Codename" fill className="object-cover object-top" sizes="100vw" />
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,26,46,0.6) 0%, transparent 60%)' }} />
             <div className="absolute bottom-3 left-4 text-white z-10">
-              <p className="text-[9px] uppercase tracking-[2px] opacity-80" style={{ fontFamily: F_SANS }}>Max estate 361</p>
-              <p className="text-sm font-semibold" style={{ fontFamily: F_JOST }}>Sector 36A,Dwarka Expressway Gurugram</p>
+              <p className="text-[9px] uppercase tracking-[2px] font-semibold" style={{ fontFamily: F_SANS, color: '#FFFFFF' }}>ASBL Codename</p>
+              <p className="text-sm font-semibold" style={{ fontFamily: F_JOST }}>RTC X Cross Road, Hyderabad</p>
             </div>
           </div>
 
           <div className="p-6 sm:p-8 flex flex-col justify-center flex-1">
             <div className="text-center mb-6">
-              <span style={{
+              {/* <span style={{
                 display: 'inline-block', padding: '4px 16px',
                 background: 'var(--color-gold-bg)', borderRadius: '50px',
                 fontSize: '10px', fontWeight: '700', color: 'var(--color-gold)',
@@ -82,8 +82,8 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 border: '1px solid var(--color-gold-light)', marginBottom: '10px',
               }}>
                 Exclusive Benefits
-              </span>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug uppercase tracking-tight" style={{ fontFamily: F_JOST }}>
+              </span> */}
+              <h3 className="text-lg sm:text-2xl font-bold text-gray-900 leading-snug uppercase tracking-tight whitespace-nowrap" style={{ fontFamily: F_JOST }}>
                 Book A Free Site Visit
               </h3>
               <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>

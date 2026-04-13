@@ -6,41 +6,35 @@ const PRIMARY = "var(--color-primary)";
 
 const units = [
   {
-    type: "1.5 BHK Floor Plan",
-    size: "1,144 sq ft",
-    price: "₹ 2.5 Cr* Onwards",
+    type: "Luxe 3 BHK",
+    size: "1900 Sq.ft.",
+    price: "₹ 1.8 Cr* Onwards",
     oldPrice: null,
-    btnText: "Get Cost Sheet",
+    btnText: "Enquire Now",
     features: [
-      "Limited Pre-Launch Inventory",
-      "Attractive Payment Plan",
-      "Premium Residence"
+      "Offers: On Request",
     ],
     isPopular: false,
   },
   {
-    type: "2 BHK Floor Plan",
-    size: "1535 &1565 sq ft",
-    price: "Ask For Price",
+    type: "Premium 3 BHK + Study",
+    size: "2300 Sq.ft.",
+    price: "₹ On Request",
     oldPrice: null,
-    btnText: "Ask Price",
+    btnText: "Enquire Now",
     features: [
-      "Limited Pre-Launch Inventory",
-      "Attractive Payment Plan",
-      "Premium Residence"
+      "Offers: On Request",
     ],
     isPopular: true,
   },
   {
-    type: "2 Bedroom (Loft)",
-    size: "1687 sqft",
-    price: "Ask For Price",
+    type: "Luxe 4 BHK",
+    size: "2600 Sq.ft.",
+    price: "₹ On Request",
     oldPrice: null,
-    btnText: "Ask Price",
+    btnText: "Enquire Now",
     features: [
-      "Limited Pre-Launch Inventory",
-      "Attractive Payment Plan",
-      "Premium Residence"
+      "Offers: On Request",
     ],
     isPopular: false,
   },
@@ -76,13 +70,13 @@ const Pricing = ({ setIsOpen }) => {
             PREMIUM RESIDENCES
           </span>
           <h2
-            className="font-bold mb-4"
-            style={{ fontFamily: 'var(--font-jost), Montserrat, sans-serif', color: PRIMARY, fontSize: '26px', letterSpacing: '-0.01em' }}
+            className="mb-4"
+            style={{ fontFamily: 'var(--font-jost), Montserrat, sans-serif', color: '#111827', fontSize: '26px', fontWeight: '800', letterSpacing: '-0.01em' }}
           >
             Configuration &amp; <span style={{ color: GOLD }}>Price</span>
           </h2>
 
-          <div className="w-20 h-1 mx-auto rounded-full mb-6" style={{ background: GOLD }} />
+          <div style={{ width: '60px', height: '3px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px', margin: '8px auto 12px' }} />
 
           {/* <p
             className="max-w-2xl mx-auto text-gray-500"

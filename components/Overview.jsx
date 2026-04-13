@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
 import { getGeo, buildTrackingFields } from '../lib/formMeta'
 import { overviewImage } from '../lib/images'
+import Link from 'next/link'
 
 const GOLD = 'var(--color-gold)'
 const GOLD_DARK = 'var(--color-gold-dark)'
@@ -12,10 +13,7 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SERIF = 'var(--font-serif), Cormorant Garamond, serif'
 
 const FULL_TEXT = `
-Own your dream home at Max Estates 361, Sector 36A, Dwarka Expressway, a premium residential destination crafted for modern urban living and timeless comfort. Strategically located just minutes away from the upcoming Global City, this landmark development offers unmatched connectivity to Delhi, IGI Airport, major business districts, and key locations across Gurugram, making it an ideal choice for both homeowners and investors.
-
-Designed to redefine luxury living, Max Estates 361 brings together elegant architecture, spacious residences, and thoughtfully planned layouts that maximize natural light, ventilation, and everyday comfort.
-
+ASBL Codename is an iconic new launch at RTC X Roads, Hyderabad, offering premium 3 & 4 BHK luxury apartments designed for modern urban living. Located in the heart of the city, this high-rise development features contemporary architecture, spacious layouts, and world-class amenities, providing a perfect blend of comfort and convenience. Spread across a thoughtfully planned development, it offers excellent connectivity to major IT hubs, reputed schools, hospitals, and entertainment zones, making it an ideal choice for families and professionals. With its prime central location, gated community living, and modern infrastructure, ASBL  is set to become a landmark residential address in Hyderabad.
 `
 
 const inputStyle = {
@@ -164,9 +162,9 @@ const EarlyForm = () => {
       {/* Consent */}
       <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer', marginTop: 'auto' }}>
         <input type="checkbox" required defaultChecked
-          style={{ accentColor: 'var(--color-gold)', marginTop: '3px', flexShrink: 0, width: '14px', height: '14px' }} />
+          style={{ accentColor: '#3b82f6', marginTop: '3px', flexShrink: 0, width: '14px', height: '14px' }} />
         <span style={{ fontSize: '11px', color: '#9ca3af', fontFamily: F_SANS, lineHeight: 1.6 }}>
-          I authorize the developer &amp; its representatives to contact me via Email / SMS / WhatsApp / Call.
+          I agree to receive updates as per the <Link href="/privacy-policy" style={{ color: '#2563eb', textDecoration: 'underline' }}>Privacy Policy</Link>.
         </span>
       </label>
 
@@ -200,7 +198,7 @@ const Overview = () => (
           fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)',
           fontFamily: F_JOST, letterSpacing: '0.1em', textTransform: 'uppercase',
           border: '1px solid var(--color-gold-light)', marginBottom: '10px',
-        }}>Max Estate 361 New Launch</span>
+        }}>ASBL Codename New Launch</span>
         <h2 style={{
           fontFamily: F_JOST, fontWeight: '800', fontSize: '26px',
           color: '#111827', margin: 0, letterSpacing: '-0.01em',
@@ -225,7 +223,7 @@ const Overview = () => (
             boxShadow: '0 16px 48px rgba(0,0,0,0.14)',
             border: '3px solid #fff', width: '100%', minHeight: '340px',
           }}>
-            <Image src={overviewImage} alt="Max Estate 361" fill className="object-cover object-top"
+            <Image src={overviewImage} alt="ASBL Codename" fill className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 33vw" priority />
             {/* <div style={{
               position: 'absolute', bottom: 0, left: 0, right: 0,
@@ -305,13 +303,13 @@ const Overview = () => (
                 fontFamily: F_JOST, fontWeight: '800', fontSize: '16px',
                 color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em'
               }}>
-                Get Early Booking Advantage
+                Book Free Site Visit
               </h3>
               <p style={{
                 fontFamily: F_SANS, fontSize: '12px',
                 color: 'rgba(255,255,255,0.6)', margin: 0
               }}>
-                Limited Inventory Available Hurry Now !
+                Register now to get the best deal
               </p>
             </div>
             <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column' }}>
