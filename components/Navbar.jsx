@@ -1,6 +1,7 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import { logoImages } from '../lib/images'
 
 const GOLD = 'var(--color-gold)'
 
@@ -18,10 +19,10 @@ const navLinks = [
 /* ── Inline SVG Logo ─────────────────────────────────────────── */
 const ProjectLogo = () => (
   <img
-    src="/images/logo/logo.webp"
+    src={logoImages.main}
     alt="ASBL Codename"
-    className="h-10 md:h-16 w-auto object-contain transition-all"
-    style={{ maxWidth: '250px' }}
+    className="h-20 md:h-24 w-auto object-contain transition-all"
+    style={{ maxWidth: '300px' }}
   />
 )
 
