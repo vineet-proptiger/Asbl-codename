@@ -3,6 +3,7 @@ import { Open_Sans, Montserrat, Cormorant_Garamond } from 'next/font/google'
 import localFont from 'next/font/local'
 import { GoogleTagManager } from '@next/third-parties/google'
 import Script from 'next/script'
+import { faviconImages } from '../lib/images'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -34,6 +35,11 @@ const nephilm = localFont({
 export const metadata = {
   title: 'ASBL Codename  | 3 & 4 BHK Luxury Apartments — RTC X Cross Road, Hyderabad',
   description: 'ASBL Codename  — Sky-high luxury residences at RTC X Cross Road, Hyderabad. 3 BHK & 4 BHK luxury apartments starting ₹1.8 Cr*. Iconic high-rise skyline living with premium finish and world-class amenities.',
+  icons: {
+    icon: faviconImages.icon,
+    apple: faviconImages.apple,
+  },
+  manifest: faviconImages.manifest,
 }
 
 export default function RootLayout({ children }) {
