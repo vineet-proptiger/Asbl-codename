@@ -10,15 +10,19 @@ const Footer = () => (
   <footer style={{ background: 'var(--color-dark)', color: '#fff' }}>
 
     <div style={{ maxWidth: '860px', margin: '0 auto', padding: '56px 24px 32px', textAlign: 'center' }}>
-      <h2 style={{ fontSize: '24px', fontWeight: '800', fontFamily: F_JOST, marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.05em' }} data-aos="fade-in">
-        ASBL Builders
+      <h2 style={{ fontSize: '24px', fontWeight: '800', fontFamily: F_JOST, marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.05em', display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }} data-aos="fade-in">
+        <svg
+          width="28" height="14" viewBox="0 0 28 14" fill="none"
+          style={{ display: 'inline-block', marginRight: '10px', verticalAlign: 'middle', marginBottom: '3px' }}
+        >
+          <path d="M2 12 Q14 2 26 12" stroke="#fff" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+        </svg>
+        ASBL BUILDERS
       </h2>
       <p style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_JOST, fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '12px' }}>
         Premium Real Estate Developer — Hyderabad
       </p>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '24px' }}>
-        <span style={{ width: '36px', height: '2.5px', background: 'linear-gradient(90deg, var(--color-gold), var(--color-gold-light))', borderRadius: '2px' }} />
-      </div>
+
       <p style={{ fontSize: '15px', color: '#bbb', fontFamily: F_SANS, lineHeight: 1.8, marginBottom: '32px', textAlign: 'justify' }}
         data-aos="fade-in" data-aos-delay="100">
         ASBL (Ashoka Builders India Private Limited) is a reputed real estate developer known for delivering high-quality residential projects with a strong focus on design, transparency, and timely delivery. With a vision to redefine urban living, ASBL creates thoughtfully planned homes that combine modern architecture, efficient layouts, and premium amenities. The company has earned trust in the Hyderabad real estate market by consistently delivering projects that offer both lifestyle value and long-term investment potential. ASBL developments are known for their attention to detail, customer-centric approach, and commitment to excellence.<br /><br />Project RERA NO.: Coming Soon (Subject to official approvals).
@@ -46,6 +50,7 @@ const Footer = () => (
 )
 
 export default Footer
+
 
 
 

@@ -11,7 +11,7 @@ const ArcIcon = () => (
     width="28" height="14" viewBox="0 0 28 14" fill="none"
     style={{ display: 'inline-block', marginRight: '8px', verticalAlign: 'middle', marginBottom: '3px' }}
   >
-    <path d="M2 12 Q14 2 26 12" stroke="#684C1B" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+    <path d="M2 12 Q14 2 26 12" stroke="#684C1B" strokeWidth="2.5" fill="none" strokeLinecap="round" />
   </svg>
 )
 
@@ -200,3 +200,4 @@ const Highlights = ({ setIsOpen }) => (
 )
 
 export default Highlights
+

@@ -47,34 +47,20 @@ const Pricing = ({ setIsOpen }) => {
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16" data-aos="fade-up">
-          <span style={{
-            display: "inline-block", padding: "4px 16px",
-            background: "var(--color-gold-bg)", borderRadius: "50px",
-            fontSize: "11px", fontWeight: "700", color: "var(--color-gold)",
-            fontFamily: "var(--font-jost), Montserrat, sans-serif",
-            letterSpacing: "0.1em", textTransform: "uppercase",
-            border: "1px solid var(--color-gold-light)", marginBottom: "10px",
+        <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
+          <h2 style={{
+            fontFamily: "var(--font-jost), Montserrat, sans-serif", fontWeight: '700', fontSize: '18px',
+            color: '#684C1B', letterSpacing: '0.22em', textTransform: 'uppercase', margin: 0,
+            display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap'
           }}>
-            PREMIUM RESIDENCES
-          </span>
-          <h2
-            className="font-bold mb-4"
-            style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", color: PRIMARY, fontSize: "26px", letterSpacing: "-0.01em" }}
-          >
-            Configurations &amp; <span style={{ color: GOLD }}>Pricing</span>
+            <svg
+              width="28" height="14" viewBox="0 0 28 14" fill="none"
+              style={{ display: 'inline-block', marginRight: '10px', verticalAlign: 'middle', marginBottom: '3px' }}
+            >
+              <path d="M2 12 Q14 2 26 12" stroke="#684C1B" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+            </svg>
+            CONFIGURATIONS & PRICING
           </h2>
-          {/* <p style={{ fontFamily: F_SANS, fontSize: "13px", color: "#6b7280", marginBottom: "4px" }}>
-            VRX Magna offers thoughtfully crafted homes designed for modern urban living
-          </p> */}
-
-          <div className="w-20 h-1 mx-auto rounded-full mb-4" style={{ background: GOLD }} />
-          {/* <p style={{ fontFamily: F_SANS, fontSize: "13px", color: "#6b7280", marginBottom: "4px" }}>
-            Phase 5 Launch Expected
-          </p>
-          <p style={{ fontFamily: "var(--font-jost), Montserrat, sans-serif", fontSize: "18px", fontWeight: "800", color: GOLD }}>
-            ~₹24,000 – 27,000 psf <span style={{ fontSize: "12px", fontWeight: "600", color: "#9ca3af" }}>(All Inclusive)</span>
-          </p> */}
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
@@ -163,3 +149,4 @@ const Pricing = ({ setIsOpen }) => {
 };
 
 export default Pricing;
+

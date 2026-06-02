@@ -324,3 +324,4 @@ const Hero = ({ setIsOpen }) => {
 }
 
 export default Hero
+

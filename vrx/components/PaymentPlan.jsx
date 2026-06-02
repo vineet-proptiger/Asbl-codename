@@ -116,3 +116,4 @@ const PaymentPlan = ({ setIsOpen }) => (
 )
 
 export default PaymentPlan
+

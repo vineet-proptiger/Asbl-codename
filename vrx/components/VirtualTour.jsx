@@ -100,3 +100,4 @@ const VirtualTour = ({ setIsOpen }) => {
 }
 
 export default VirtualTour
+
