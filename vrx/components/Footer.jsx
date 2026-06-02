@@ -21,7 +21,7 @@ const Footer = () => (
       </div>
       <p style={{ fontSize: '15px', color: '#bbb', fontFamily: F_SANS, lineHeight: 1.8, marginBottom: '32px', textAlign: 'justify' }}
         data-aos="fade-in" data-aos-delay="100">
-        ASBL (Ashoka Builders India Private Limited) is a reputed real estate developer known for delivering high-quality residential projects with a strong focus on design, transparency, and timely delivery. With a vision to redefine urban living, ASBL creates thoughtfully planned homes that combine modern architecture, efficient layouts, and premium amenities. The company has earned trust in the Hyderabad real estate market by consistently delivering projects that offer both lifestyle value and long-term investment potential. ASBL developments are known for their attention to detail, customer-centric approach, and commitment to excellence. Project RERA NO.: Coming Soon (Subject to official approvals).
+        ASBL (Ashoka Builders India Private Limited) is a reputed real estate developer known for delivering high-quality residential projects with a strong focus on design, transparency, and timely delivery. With a vision to redefine urban living, ASBL creates thoughtfully planned homes that combine modern architecture, efficient layouts, and premium amenities. The company has earned trust in the Hyderabad real estate market by consistently delivering projects that offer both lifestyle value and long-term investment potential. ASBL developments are known for their attention to detail, customer-centric approach, and commitment to excellence.<br /><br />Project RERA NO.: Coming Soon (Subject to official approvals).
       </p>
       {/* <div style={{ borderTop: '1px solid #333', marginBottom: '24px' }} /> */}
     </div>
