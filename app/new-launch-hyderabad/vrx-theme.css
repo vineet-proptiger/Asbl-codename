@@ -1,0 +1,199 @@
+/*
+ * VRX theme overrides — scoped to [data-theme="vrx"]
+ * Overrides ASBL's purple :root variables with VRX's red/brand palette.
+ * All VRX components inherit these via CSS variable cascade.
+ */
+
+[data-theme="vrx"] {
+  --color-gold: #A9262D;
+  --color-gold-light: #C53B42;
+  --color-gold-dark: #8B1E24;
+  --color-gold-bg: #F4F0E6;
+
+  --color-brand: #A9262D;
+  --color-brand-hover: #8B1E24;
+  --color-brand-light: rgba(169, 38, 45, 0.08);
+
+  --color-nav-text: #684C1B;
+  --color-heading-brown: #3A2A0E;
+  --color-cream-bg: #EAE5DC;
+  --color-border-gold: #D5C2A8;
+
+  --color-primary: #6D6E70;
+  --color-primary-light: #8A8B8D;
+  --color-primary-dark: #555658;
+
+  --color-dark: #3A3B3C;
+  --color-dark-mid: #4A4B4D;
+
+  --color-bg: #ffffff;
+  --color-bg-light: #ffffff;
+  --color-bg-muted: #f7f7f7;
+
+  --color-text: #3A3B3C;
+  --color-text-mid: #6D6E70;
+  --color-text-light: #9A9B9D;
+
+  --shadow-sm: 0 2px 8px rgba(169, 38, 45, 0.08);
+  --shadow-md: 0 8px 24px rgba(169, 38, 45, 0.14);
+  --shadow-lg: 0 20px 48px rgba(169, 38, 45, 0.18);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.07);
+  --color-shadow-inner: rgba(169, 38, 45, 0.10);
+  --color-shadow-card: rgba(169, 38, 45, 0.10);
+
+  /* Re-establish charcoal text — ASBL body uses purple #433E6C */
+  color: #3A3B3C;
+}
+
+/* btn-brand — used by VRX Navbar & floating tab */
+[data-theme="vrx"] .btn-brand {
+  background: var(--color-brand);
+  color: #fff;
+  border: 2px solid var(--color-brand) !important;
+  padding: 14px 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-jost), 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease !important;
+  white-space: nowrap;
+}
+
+[data-theme="vrx"] .btn-brand:hover {
+  background: #ffffff !important;
+  color: var(--color-brand) !important;
+  border-color: var(--color-brand) !important;
+  transform: translateY(-3px);
+}
+
+/* Concave-notch mask for all VRX buttons */
+[data-theme="vrx"] .btn-gold,
+[data-theme="vrx"] .btn-gold-outline,
+[data-theme="vrx"] .btn-primary,
+[data-theme="vrx"] .btn-brand {
+  border-radius: 0 !important;
+  -webkit-mask:
+    radial-gradient(circle at 0 0, transparent 6px, black 6.5px) top left,
+    radial-gradient(circle at 100% 0, transparent 6px, black 6.5px) top right,
+    radial-gradient(circle at 0 100%, transparent 6px, black 6.5px) bottom left,
+    radial-gradient(circle at 100% 100%, transparent 6px, black 6.5px) bottom right;
+  -webkit-mask-size: 51% 51%;
+  -webkit-mask-repeat: no-repeat;
+  mask:
+    radial-gradient(circle at 0 0, transparent 6px, black 6.5px) top left,
+    radial-gradient(circle at 100% 0, transparent 6px, black 6.5px) top right,
+    radial-gradient(circle at 0 100%, transparent 6px, black 6.5px) bottom left,
+    radial-gradient(circle at 100% 100%, transparent 6px, black 6.5px) bottom right;
+  mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+}
+
+[data-theme="vrx"] .btn-gold,
+[data-theme="vrx"] .btn-primary {
+  box-shadow: none !important;
+  filter: drop-shadow(0 4px 10px rgba(169, 38, 45, 0.35));
+}
+
+[data-theme="vrx"] .btn-gold:hover,
+[data-theme="vrx"] .btn-primary:hover,
+[data-theme="vrx"] .btn-gold-outline:hover {
+  box-shadow: none !important;
+  filter: drop-shadow(0 8px 20px rgba(169, 38, 45, 0.30));
+}
+
+[data-theme="vrx"] .btn-gold:active,
+[data-theme="vrx"] .btn-primary:active {
+  box-shadow: none !important;
+  filter: drop-shadow(0 2px 6px rgba(169, 38, 45, 0.20));
+}
+
+/* Floating vertical enquire tab */
+[data-theme="vrx"] .btn-floating-tab {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 40;
+  transform: translateY(-50%);
+  border-radius: 0 !important;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 20px 10px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  font-family: var(--font-jost), 'Montserrat', sans-serif;
+  background: var(--color-brand);
+  color: #fff;
+  border: 2px solid var(--color-brand) !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: uppercase;
+  box-shadow: none !important;
+  filter: drop-shadow(-4px 0 14px rgba(169, 38, 45, 0.28));
+  transition: all 0.3s ease !important;
+  -webkit-mask:
+    radial-gradient(circle at 0 0, transparent 6px, black 6.5px) top left,
+    radial-gradient(circle at 100% 0, transparent 6px, black 6.5px) top right,
+    radial-gradient(circle at 0 100%, transparent 6px, black 6.5px) bottom left,
+    radial-gradient(circle at 100% 100%, transparent 6px, black 6.5px) bottom right;
+  -webkit-mask-size: 51% 51%;
+  -webkit-mask-repeat: no-repeat;
+  mask:
+    radial-gradient(circle at 0 0, transparent 6px, black 6.5px) top left,
+    radial-gradient(circle at 100% 0, transparent 6px, black 6.5px) top right,
+    radial-gradient(circle at 0 100%, transparent 6px, black 6.5px) bottom left,
+    radial-gradient(circle at 100% 100%, transparent 6px, black 6.5px) bottom right;
+  mask-size: 51% 51%;
+  mask-repeat: no-repeat;
+}
+
+[data-theme="vrx"] .btn-floating-tab:hover {
+  transform: translateY(-50%) !important;
+  background: #ffffff !important;
+  color: var(--color-brand) !important;
+  filter: drop-shadow(-6px 0 20px rgba(169, 38, 45, 0.35));
+}
+
+/* sticky bottom bar shadow override */
+[data-theme="vrx"] .sticky-bottom-bar {
+  box-shadow: 0 -4px 20px rgba(169, 38, 45, 0.18);
+}
+
+/* pricing-card — override ASBL's 16px radius and purple hover border */
+[data-theme="vrx"] .pricing-card {
+  border-radius: 8px !important;
+}
+
+[data-theme="vrx"] .pricing-card:hover {
+  border-color: rgba(169, 38, 45, 0.25) !important;
+}
+
+/* form-input focus ring — override ASBL's hardcoded purple glow */
+[data-theme="vrx"] .form-input:focus {
+  border-color: var(--color-gold) !important;
+  box-shadow: 0 0 0 3px rgba(169, 38, 45, 0.10), inset 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* focus ring — override ASBL's hardcoded purple */
+[data-theme="vrx"] *:focus-visible {
+  outline: 2px solid rgba(169, 38, 45, 0.5);
+}
+
+/* Scrollbar & selection for VRX page */
+[data-theme="vrx"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #A9262D, #8B1E24);
+}
+
+[data-theme="vrx"] ::selection {
+  background: rgba(169, 38, 45, 0.15);
+  color: #8B1E24;
+}
