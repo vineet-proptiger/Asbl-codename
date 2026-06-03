@@ -49,7 +49,7 @@ const CurvedCorners = ({ bg = '#fff' }) => {
 }
 
 const infoItems = [
-  { label: 'LOCATION',   value: 'RTC X ROADS, HYDERABAD' },
+  { label: 'LOCATION',   value: 'RTC CROSS ROADS, HYDERABAD' },
   { label: 'TYPE',       value: '3 & 4 BHK APARTMENTS'  },
   { label: 'PRICE',      value: 'FROM ₹1.8 CR* ONWARDS'   },
 ]
@@ -84,7 +84,7 @@ const Overview = ({ setIsOpen }) => (
         marginTop: 0, marginBottom: '28px', marginLeft: 'auto', marginRight: 'auto',
         maxWidth: '680px', textAlign: 'justify',
       }} data-aos="fade-up" data-aos-delay="80">
-        ASBL Codename is an iconic new launch at RTC X Roads, Hyderabad, offering premium 3 & 4 BHK luxury apartments designed for modern urban living. Located in the heart of the city, this high-rise development features contemporary architecture, spacious layouts, and world-class amenities, providing a perfect blend of comfort and convenience. Spread across a thoughtfully planned development, it offers excellent connectivity to major IT hubs, reputed schools, hospitals, and entertainment zones, making it an ideal choice for families and professionals. With its prime central location, gated community living, and modern infrastructure, ASBL is set to become a landmark residential address in Hyderabad.
+        ASBL RTC X Road is an iconic new launch at RTC X Roads, Hyderabad, offering premium 3 & 4 BHK luxury apartments designed for modern urban living. Located in the heart of the city, this high-rise development features contemporary architecture, spacious layouts, and world-class amenities, providing a perfect blend of comfort and convenience. Spread across a thoughtfully planned development, it offers excellent connectivity to major IT hubs, reputed schools, hospitals, and entertainment zones, making it an ideal choice for families and professionals. With its prime central location, gated community living, and modern infrastructure, ASBL is set to become a landmark residential address in Hyderabad.
       </p>
 
      
@@ -107,7 +107,7 @@ const Overview = ({ setIsOpen }) => (
         {infoItems.map((item, i) => (
           <div key={i} className="bg-white" style={{
             padding: '26px 20px',
-            textAlign: 'justify',
+            textAlign: 'left',
           }}>
             {/* Label */}
             <p style={{
@@ -120,7 +120,7 @@ const Overview = ({ setIsOpen }) => (
             {/* Value */}
             <p style={{
               fontFamily: F_JOST, fontSize: '13px', fontWeight: '700',
-              color: '#3A2A0E', letterSpacing: '0.08em',
+              color: '#3A2A0E', letterSpacing: '0.08em', wordSpacing: '0.15em',
               textTransform: 'uppercase', margin: 0,
             }}>
               {item.value}
@@ -131,7 +131,7 @@ const Overview = ({ setIsOpen }) => (
       </div>
 
       {/* ── Request A Brochure CTA ── */}
-      <div className="flex justify-center sm:justify-start" style={{ marginTop: '40px' }} data-aos="fade-up" data-aos-delay="260">
+      <div className="flex justify-center sm:justify-start lg:hidden" style={{ marginTop: '40px' }} data-aos="fade-up" data-aos-delay="260">
         <button
           onClick={() => setIsOpen && setIsOpen(true)}
           className="btn-brand"

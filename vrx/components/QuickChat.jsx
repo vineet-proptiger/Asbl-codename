@@ -41,7 +41,7 @@ export default function QuickChat() {
               A
             </div>
             <div className="ml-3 flex flex-col">
-              <strong className="text-[15px] font-semibold leading-tight">ASBL Codename Expert</strong>
+              <strong className="text-[15px] font-semibold leading-tight">ASBL RTC X Road Expert</strong>
               <div className="flex items-center text-[11px] text-white/80 mt-0.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] mr-1.5"></span>
                 typically replies in &lt;28 min
@@ -57,19 +57,19 @@ export default function QuickChat() {
           {/* Body */}
           <div className="p-5 flex flex-col gap-4">
             <div className="bg-white text-[#151515] text-[14px] px-4 py-3 rounded-2xl rounded-tl-sm w-fit shadow-sm max-w-[85%] self-start">
-              Hi 👋 What would you like to know about ASBL Codename?
+              Hi 👋 What would you like to know about ASBL RTC X Road?
             </div>
             
             <div className="flex flex-wrap justify-end gap-2.5">
               {[
-                {text: "💰 Current price band", link: "https://wa.me/919718344024?text=Hi%2C%20I%20want%20the%20current%20price%20band%20for%20ASBL%20Codename."},
-                {text: "🏛️ 3 BHK floor plan", link: "https://wa.me/919718344024?text=Hi%2C%20please%20send%20me%20the%203%20BHK%20floor%20plan%20for%20ASBL%20Codename."},
-                {text: "🏛️ 4 BHK floor plan", link: "https://wa.me/919718344024?text=Hi%2C%20please%20send%20me%20the%204%20BHK%20floor%20plan%20for%20ASBL%20Codename."},
-                {text: "🚗 Book a site visit", link: "https://wa.me/919718344024?text=Hi%2C%20I%20want%20to%20book%20a%20site%20visit%20for%20ASBL%20Codename.%20My%20preferred%20day%20is%3A"},
-                {text: "🌍 NRI investment guide", link: "https://wa.me/919718344024?text=Hi%2C%20I%20am%20an%20NRI%20buyer%20%E2%80%94%20please%20share%20the%20ASBL%20Codename%20NRI%20investment%20guide."},
-                {text: "📐 Payment plan", link: "https://wa.me/919718344024?text=Hi%2C%20please%20share%20the%20ASBL%20Codename%20payment%20plan%20and%20instalment%20schedule."},
-                {text: "📄 Send brochure (PDF)", link: "https://wa.me/919718344024?text=Hi%2C%20please%20share%20the%20ASBL%20Codename%20brochure%20and%20official%20PDF."},
-                {text: "📞 Request a callback", link: "https://wa.me/919718344024?text=Hi%2C%20please%20schedule%20a%20callback%20for%20ASBL%20Codename.%20My%20preferred%20time%20is%3A"}
+                {text: "💰 Current price band", link: "https://wa.me/919718344024?text=Hi%2C%20I%20want%20the%20current%20price%20band%20for%20ASBL%20RTC%20X%20Road."},
+                {text: "🏛️ 3 BHK floor plan", link: "https://wa.me/919718344024?text=Hi%2C%20please%20send%20me%20the%203%20BHK%20floor%20plan%20for%20ASBL%20RTC%20X%20Road."},
+                {text: "🏛️ 4 BHK floor plan", link: "https://wa.me/919718344024?text=Hi%2C%20please%20send%20me%20the%204%20BHK%20floor%20plan%20for%20ASBL%20RTC%20X%20Road."},
+                {text: "🚗 Book a site visit", link: "https://wa.me/919718344024?text=Hi%2C%20I%20want%20to%20book%20a%20site%20visit%20for%20ASBL%20RTC%20X%20Road.%20My%20preferred%20day%20is%3A"},
+                {text: "🌍 NRI investment guide", link: "https://wa.me/919718344024?text=Hi%2C%20I%20am%20an%20NRI%20buyer%20%E2%80%94%20please%20share%20the%20ASBL%20RTC%20X%20Road%20NRI%20investment%20guide."},
+                {text: "📐 Payment plan", link: "https://wa.me/919718344024?text=Hi%2C%20please%20share%20the%20ASBL%20RTC%20X%20Road%20payment%20plan%20and%20instalment%20schedule."},
+                {text: "📄 Send brochure (PDF)", link: "https://wa.me/919718344024?text=Hi%2C%20please%20share%20the%20ASBL%20RTC%20X%20Road%20brochure%20and%20official%20PDF."},
+                {text: "📞 Request a callback", link: "https://wa.me/919718344024?text=Hi%2C%20please%20schedule%20a%20callback%20for%20ASBL%20RTC%20X%20Road.%20My%20preferred%20time%20is%3A"}
               ].map((pill, i) => (
                 <a key={i} href={pill.link} target="_blank" rel="noopener noreferrer" 
                    className="bg-white text-[#005B4F] text-[13px] font-medium px-4 py-2.5 rounded-full border border-[#25D366] shadow-sm hover:bg-[#005B4F] hover:text-white hover:border-[#005B4F] hover:shadow-md transition-all duration-300 whitespace-nowrap">

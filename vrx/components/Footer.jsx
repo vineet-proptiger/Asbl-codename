@@ -32,7 +32,7 @@ const Footer = () => (
 
     <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-4 py-4 px-6 border-t border-[#222] text-center sm:text-left max-w-[1200px] mx-auto">
       <p style={{ fontSize: '13px', color: '#888', fontFamily: F_SANS }}>
-        &copy; 2026 ASBL Codename. All rights reserved.
+        &copy; 2026 ASBL RTC X Road. All rights reserved.
       </p>
       <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
         <Link href="/privacy-policy" style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_SANS }}>

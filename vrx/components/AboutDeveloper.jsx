@@ -179,7 +179,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
               </div>
               <div>
                 <h3 style={{ fontFamily: F_JOST, fontWeight: '800', fontSize: '18px', color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em' }}>
-                  ASBL Codename
+                  ASBL RTC Cross Road
                 </h3>
 
               </div>
