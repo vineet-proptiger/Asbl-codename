@@ -14,12 +14,11 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
 
   useEffect(() => {
     if (autoTriggered.current) return
-    if (typeof window !== 'undefined' && localStorage.getItem('_lsub_done') === '1') return
     const initial = setTimeout(() => {
       autoTriggered.current = true
       setIsOpen(true)
       intervalRef.current = setInterval(() => setIsOpen(true), 20000)
-    }, 30000)
+    }, 10000)
     return () => {
       clearTimeout(initial)
       if (intervalRef.current) clearInterval(intervalRef.current)
