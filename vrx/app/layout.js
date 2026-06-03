@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <GoogleTagManager gtmId="GTM-575H8R87" />
       <head>
-        <Script
+        {/* <Script
           id="json-ld-article"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
               "datePublished": "2026-04-21"
             })
           }}
-        />
+        /> */}
       </head>
       <body className={`${openSans.variable} ${montserrat.variable} ${cormorant.variable} ${nephilm.variable} font-sans text-dark antialiased`}>
         <Script id="gtag-init" strategy="beforeInteractive">
