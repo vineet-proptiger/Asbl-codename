@@ -1,8 +1,8 @@
 import './vrx-theme.css'
 
 export const metadata = {
-  title: 'VRX MAGNA | Studio, 1 BHK & 2 BHK Smart Homes in Thirumazhisai, Chennai',
-  description: "VRX MAGNA — Thirumazhisai's premier smart homes gated community. Studio, 1 BHK & 2 BHK apartments starting from ₹35 Lakhs. 437 units, 100 amenities, home automation. RERA: TN/02/Building/0036/2021.",
+  title: 'ASBL RTC Cross Road New Launch | 3 & 4 BHK Luxury Apartments, Hyderabad',
+  description: 'ASBL Codename  — Sky-high luxury residences at RTC Cross Road, Hyderabad. 3 BHK & 4 BHK luxury apartments starting ₹1.8 Cr*. Iconic high-rise skyline living with premium finish and world-class amenities.',
 }
 
 export default function VrxLayout({ children }) {
