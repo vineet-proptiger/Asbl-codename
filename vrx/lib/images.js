@@ -4,8 +4,8 @@
 
 // ── Hero ──────────────────────────────────────────────────────
 export const heroImages = {
-  banner: '/vrx/images/hero/banner1.webp',
-  banner2: '/vrx/images/hero/banner2.webp',
+  // banner: '/vrx/images/hero/banner1.webp',
+  // banner2: '/vrx/images/hero/banner2.webp',
   banner1Desk: '/vrx/images/hero/banner1Desk.webp',
   banner1tab: '/vrx/images/hero/banner1tab.webp',
   bnnner1sm: '/vrx/images/hero/bnnner1sm.webp',
