@@ -66,15 +66,15 @@ const Overview = ({ setIsOpen }) => (
 
       {/* ── Section Heading ── */}
       <div style={{ marginBottom: '32px' }} data-aos="fade-up">
-        <h2 style={{
+        <h1 style={{
           fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
           color: '#3A2A0E', letterSpacing: '0.22em',
           textTransform: 'uppercase', margin: 0,
           display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}>
           <ArcIcon />
-          PROJECT OVERVIEW
-        </h2>
+          ASBL RTC X Road-Overview
+        </h1>
       </div>
 
       {/* ── Paragraphs ── */}

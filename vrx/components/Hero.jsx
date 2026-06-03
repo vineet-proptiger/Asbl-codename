@@ -22,7 +22,7 @@ const Hero = ({ setIsOpen }) => {
           position: relative;
           margin-top: 80px;
           height: auto;
-          aspect-ratio: 16/7; /* Shorter desktop aspect ratio to fit within 1 viewport height */
+          aspect-ratio: 1251/655; /* Matches desktop banner dimensions */
           overflow: hidden;
           background: transparent;
           display: block;
@@ -71,7 +71,7 @@ const Hero = ({ setIsOpen }) => {
 
         @media (min-width: 768px) and (max-width: 1023px) {
           .hero-container {
-            aspect-ratio: 4/3 !important; /* Shorter tablet aspect ratio (4:3) to fit viewport perfectly */
+            aspect-ratio: 1126/1125 !important; /* Matches tablet banner dimensions */
           }
         }
 
@@ -92,7 +92,7 @@ const Hero = ({ setIsOpen }) => {
           .hero-carousel {
             position: relative !important;
             width: 100% !important;
-            aspect-ratio: 3/4 !important; /* Shorter mobile aspect ratio (3:4) to fit viewport perfectly */
+            aspect-ratio: 1126/2001 !important; /* Matches mobile banner dimensions */
             height: auto !important;
             inset: auto !important;
           }
@@ -127,9 +127,11 @@ const Hero = ({ setIsOpen }) => {
           src={heroImages.banner1Desk}
           alt="VRX MAGNA Desktop Banner"
           fill
-          className="object-fill"
+          className="object-cover"
           priority
           sizes="100vw"
+          quality={100}
+          unoptimized={true}
         />
       </div>
 
@@ -139,9 +141,11 @@ const Hero = ({ setIsOpen }) => {
           src={heroImages.banner1tab}
           alt="VRX MAGNA Tablet Banner"
           fill
-          className="object-fill"
+          className="object-cover"
           priority
           sizes="100vw"
+          quality={100}
+          unoptimized={true}
         />
       </div>
 
@@ -151,9 +155,11 @@ const Hero = ({ setIsOpen }) => {
           src={heroImages.bnnner1sm}
           alt="VRX MAGNA Mobile Banner"
           fill
-          className="object-fill"
+          className="object-cover"
           priority
           sizes="100vw"
+          quality={100}
+          unoptimized={true}
         />
       </div>
 
