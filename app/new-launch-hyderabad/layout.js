@@ -8,3 +8,4 @@ export const metadata = {
 export default function VrxLayout({ children }) {
   return children
 }
+

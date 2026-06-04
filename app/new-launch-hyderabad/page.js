@@ -41,7 +41,7 @@ export default function NewLaunchHyderabad() {
       {/* <ContactCTA /> */}
       <AboutDeveloper setIsOpen={setIsOpen} />
       <QuickChat />
-      <Footer />
+      <Footer privacyPolicyLink="/new-launch-hyderabad/privacy-policy" />
       <EnquireModal isOpen={isOpen} setIsOpen={setIsOpen} />
 
       {/* Floating Vertical Enquire Tab — Desktop only */}

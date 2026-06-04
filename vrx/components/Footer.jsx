@@ -6,7 +6,7 @@ import Link from 'next/link'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
-const Footer = () => (
+const Footer = ({ privacyPolicyLink = '/privacy-policy' }) => (
   <footer style={{ background: 'var(--color-dark)', color: '#fff' }}>
 
     <div style={{ maxWidth: '860px', margin: '0 auto', padding: '56px 24px 32px', textAlign: 'center' }}>
@@ -35,7 +35,7 @@ const Footer = () => (
         &copy; 2026 ASBL RTC X Road. All rights reserved.
       </p>
       <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
-        <Link href="/privacy-policy" style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_SANS }}>
+        <Link href={privacyPolicyLink} style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_SANS }}>
           Privacy Policy
         </Link>
       </div>
