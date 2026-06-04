@@ -4,14 +4,7 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
 /* Arc icon — same golden arc visible above the section title */
-const ArcIcon = () => (
-  <svg
-    width="28" height="14" viewBox="0 0 28 14" fill="none"
-    style={{ display: 'inline-block', marginRight: '8px', verticalAlign: 'middle', marginBottom: '3px' }}
-  >
-    <path d="M2 12 Q14 2 26 12" stroke="#684C1B" strokeWidth="2.5" fill="none" strokeLinecap="round"/>
-  </svg>
-)
+const ArcIcon = () => null
 
 /* Curved concave notch at each corner of the info box */
 const CurvedCorners = ({ bg = '#fff' }) => {

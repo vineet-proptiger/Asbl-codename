@@ -134,12 +134,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
           color: '#684C1B', letterSpacing: '0.22em', textTransform: 'uppercase', margin: 0,
           display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap'
         }}>
-          <svg
-            width="28" height="14" viewBox="0 0 28 14" fill="none"
-            style={{ display: 'inline-block', marginRight: '10px', verticalAlign: 'middle', marginBottom: '3px' }}
-          >
-            <path d="M2 12 Q14 2 26 12" stroke="#684C1B" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-          </svg>
+          
           ABOUT THE DEVELOPER
         </h2>
       </div>

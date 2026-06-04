@@ -11,12 +11,7 @@ const Footer = ({ privacyPolicyLink = '/privacy-policy' }) => (
 
     <div style={{ maxWidth: '860px', margin: '0 auto', padding: '56px 24px 32px', textAlign: 'center' }}>
       <h2 style={{ fontSize: '24px', fontWeight: '800', fontFamily: F_JOST, marginBottom: '6px', textTransform: 'uppercase', letterSpacing: '0.05em', display: 'flex', alignItems: 'center', justifyContent: 'center', flexWrap: 'wrap' }} data-aos="fade-in">
-        <svg
-          width="28" height="14" viewBox="0 0 28 14" fill="none"
-          style={{ display: 'inline-block', marginRight: '10px', verticalAlign: 'middle', marginBottom: '3px' }}
-        >
-          <path d="M2 12 Q14 2 26 12" stroke="#fff" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-        </svg>
+        
         ASBL BUILDERS
       </h2>
       <p style={{ fontSize: '13px', color: 'var(--color-gold)', fontFamily: F_JOST, fontWeight: '700', letterSpacing: '1.5px', textTransform: 'uppercase', marginBottom: '12px' }}>

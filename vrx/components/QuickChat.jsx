@@ -3,14 +3,7 @@ import React from 'react'
 
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
-const ArcIcon = () => (
-  <svg
-    width="28" height="14" viewBox="0 0 28 14" fill="none"
-    style={{ display: 'inline-block', marginRight: '10px', verticalAlign: 'middle', marginBottom: '3px' }}
-  >
-    <path d="M2 12 Q14 2 26 12" stroke="#684C1B" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-  </svg>
-)
+const ArcIcon = () => null
 
 export default function QuickChat() {
   return (
@@ -41,10 +34,10 @@ export default function QuickChat() {
               A
             </div>
             <div className="ml-3 flex flex-col">
-              <strong className="text-[15px] font-semibold leading-tight">ASBL RTC X Road Expert</strong>
+              <strong className="text-[15px] font-semibold leading-tight">ASBL RTC X Road</strong>
               <div className="flex items-center text-[11px] text-white/80 mt-0.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] mr-1.5"></span>
-                typically replies in &lt;28 min
+                typically replies in &lt;5 min
               </div>
             </div>
             <div className="ml-auto shrink-0">
