@@ -7,7 +7,7 @@ const PRIMARY = "var(--color-primary)";
 const units = [
   {
     type: "Luxe 3 BHK",
-    size: "1900 Sq.ft.",
+    size: "1970 Sq.ft.",
     price: "₹ 1.8 Cr* Onwards",
     oldPrice: null,
     btnText: "ENQUIRE NOW",
@@ -15,7 +15,7 @@ const units = [
   },
   {
     type: "Premium 3 BHK + Study",
-    size: "2300 Sq.ft.",
+    size: "2085 Sq.ft.",
     price: "₹ On Request",
     oldPrice: null,
     btnText: "ENQUIRE NOW",
@@ -23,7 +23,7 @@ const units = [
   },
   {
     type: "Luxe 4 BHK",
-    size: "2600 Sq.ft.",
+    size: "3015 Sq.ft.",
     price: "₹ On Request",
     oldPrice: null,
     btnText: "ENQUIRE NOW",
