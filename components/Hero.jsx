@@ -7,9 +7,8 @@ const GOLD = 'var(--color-gold)'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 
-const slides = [heroImages.banner, heroImages.banner2]
-
-const Hero = ({ setIsOpen }) => {
+const Hero = ({ setIsOpen, customImages }) => {
+  const slides = customImages || [heroImages.banner, heroImages.banner2]
   const [current, setCurrent] = useState(0)
 
   useEffect(() => {
