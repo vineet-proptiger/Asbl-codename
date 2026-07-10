@@ -33,8 +33,8 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  title: 'Eldeco Camelot | 3 & 4 BHK Luxury Apartments in Sector 17 Dwarka Delhi',
-  description: "Eldeco Camelot is all set to be the most experiential and premium residential project in the prime corridor of Sector 17, Dwarka. Crafted with a low-density concept in mind, the entire project spans 1.8 acres and comprises 2 boutique high-stilt towers and 95 residences.",
+  title: 'ASBL Legacy | 3 & 4 BHK Luxury Apartments in RTC X Roads, Hyderabad',
+  description: "ASBL Legacy is all set to be the most experiential and premium residential project in the prime corridor of RTC X Roads, Hyderabad. Crafted with a low-density concept in mind.",
 }
 
 export default function RootLayout({ children }) {
@@ -51,15 +51,15 @@ export default function RootLayout({ children }) {
               "@type": "Article",
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": "https://www.eldecocamelot.co.in/"
+                "@id": "https://www.asbllegacyrtcxroad.in/"
               },
-              "headline": "Eldeco Camelot | 3 & 4 BHK Luxury Apartments in Sector 17 Dwarka Delhi",
-              "description": "Eldeco Camelot is all set to be the most experiential and premium residential project in the prime corridor of Sector 17, Dwarka.",
-              "image": "https://www.eldecocamelot.co.in/_next/image?url=%2Fimages%2Fhero%2Fbanner1.webp&w=1200&q=75",
+              "headline": "ASBL Legacy | 3 & 4 BHK Luxury Apartments in RTC X Roads, Hyderabad",
+              "description": "ASBL Legacy is all set to be the most experiential and premium residential project in the prime corridor of RTC X Roads, Hyderabad.",
+              "image": "https://www.asbllegacyrtcxroad.in/_next/image?url=%2Fimages%2Fhero%2Fbanner1.webp&w=1200&q=75",
               "author": {
                 "@type": "Organization",
                 "name": "Proptiger Marketing Services Pvt Ltd",
-                "url": "https://www.proptiger.com/Delhi/Sector 17, Dwarka-road/Eldeco-camelot"
+                "url": "https://www.asbllegacyrtcxroad.in/"
               },
               "publisher": {
                 "@type": "Organization",

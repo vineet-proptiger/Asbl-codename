@@ -335,7 +335,7 @@ const Hero = ({ setIsOpen }) => {
         <div className="slide-layer active" style={{ gridArea: '1 / 1 / 2 / 2' }}>
           <Image
             src="/camelot/images/hero/smDevice.webp"
-            alt="Eldeco Camelot Mobile Banner"
+            alt="ASBL Legacy Mobile Banner"
             width={768}
             height={800}
             className="hero-image"

@@ -60,7 +60,7 @@ const Gallery = ({ setIsOpen }) => {
             <h2 data-aos="flip-left" data-aos-delay="500" style={{
               fontFamily: F_JOST, fontWeight: '700', fontSize: '18px',
               color: '#684C1B', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0,
-            }} className="text-center">Eldeco Camelot GALLERY</h2>
+            }} className="text-center">ASBL Legacy GALLERY</h2>
           </div>
         </div>
 
@@ -98,7 +98,7 @@ const Gallery = ({ setIsOpen }) => {
                     textTransform: 'uppercase' 
                   }}
                 >
-                  {img.alt ? img.alt.replace('Eldeco Camelot - ', '') : 'VIEW PREVIEW'}
+                  {img.alt ? img.alt.replace('ASBL Legacy ', '') : 'VIEW PREVIEW'}
                 </span>
               </div>
             </div>

@@ -64,7 +64,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
               <div className="relative w-[140px] sm:w-[160px] h-12 sm:h-14 shrink-0">
                 <Image 
                   src={logoImages.tarc} 
-                  alt="Eldeco Camelot Logo" 
+                  alt="ASBL Legacy Logo" 
                   fill 
                   className="object-contain" 
                 />

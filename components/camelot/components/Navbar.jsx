@@ -57,7 +57,7 @@ const Navbar = ({ setIsOpen }) => {
             `}</style>
             <img
               src={logoImages.tarc}
-              alt="Eldeco Camelot"
+              alt="ASBL Legacy"
               className="nav-logo"
             />
           </a>
