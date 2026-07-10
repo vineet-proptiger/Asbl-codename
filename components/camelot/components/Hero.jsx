@@ -365,7 +365,7 @@ const Hero = ({ setIsOpen }) => {
               {[
                 'Iconic high-rise skyline living',
                 'Prime central city address',
-                'Smart layouts with premium finish',
+                'Massive 86,000 Sq. Ft. Clubhouse',
                 'Sky-High Luxury Residences',
                 'Live at the Heart of Hyderabad'
               ].map((text, i) => (

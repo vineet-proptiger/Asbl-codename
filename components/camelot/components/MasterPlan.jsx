@@ -16,15 +16,14 @@ const MasterPlan = ({ setIsOpen }) => {
   const [activePlan, setActivePlan] = useState(0)
 
   return (
-    <section id="masterplan" style={{
-      padding: '56px 0',
+    <section id="masterplan" className="py-10 md:py-14" style={{
       background: '#ffffff',
       borderBottom: '1px solid #f0f0f0',
     }}>
       <div className="container mx-auto px-4 md:px-8">
 
         {/* Section Header */}
-        <div style={{ textAlign: 'center', marginBottom: '40px' }} data-aos="fade-up">
+        <div className="mb-6 md:mb-10 text-center" data-aos="fade-up">
           <h2 style={{
             fontFamily: "var(--font-jost), Montserrat, sans-serif", fontWeight: '700', fontSize: '17px',
             color: '#684C1B', letterSpacing: '0.1em',

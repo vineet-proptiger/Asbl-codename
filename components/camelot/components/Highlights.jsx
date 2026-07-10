@@ -126,11 +126,11 @@ const highlights = [
 ]
 
 const Highlights = ({ setIsOpen }) => (
-  <section id="highlights" style={{ background: BG, padding: '60px 0 72px' }}>
+  <section id="highlights" className="py-10 md:py-[72px]" style={{ background: BG }}>
     <div className="px-4 sm:px-8" style={{ maxWidth: '1100px', margin: '0 auto' }}>
 
       {/* Heading */}
-      <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+      <div className="mb-6 md:mb-10 text-center">
         <h2 data-aos="flip-left" data-aos-delay="300" style={{
           fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
           color: '#684C1B', letterSpacing: '0.1em',

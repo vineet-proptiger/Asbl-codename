@@ -54,7 +54,8 @@ const Overview = ({ setIsOpen }) => {
   return (
     <section
       id="overview"
-      style={{ background: '#fff', padding: '72px 0 80px', borderBottom: '1px solid #f0ede6' }}
+      className="py-10 md:py-[72px]"
+      style={{ background: '#fff', borderBottom: '1px solid #f0ede6' }}
     >
       <div className="container mx-auto px-4 sm:px-8 max-w-[1200px]">
       
@@ -64,14 +65,14 @@ const Overview = ({ setIsOpen }) => {
         <div className="w-full lg:w-1/2">
           
           {/* ── Section Heading ── */}
-          <div style={{ marginBottom: '40px', textAlign: 'left' }}>
+          <div className="mb-6 md:mb-10 text-left">
             <h2 data-aos="flip-right" data-aos-delay="500" style={{
               fontFamily: F_JOST, fontWeight: '700', fontSize: '17px',
               color: '#3A2A0E', letterSpacing: '0.1em',
               textTransform: 'uppercase', margin: '0 0 10px 0',
               display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '10px'
             }}>
-              ASBL Codename New Launch
+              ASBL RTC X Road
             </h2>
             {/* <h3 style={{
               fontFamily: F_JOST, fontWeight: '600', fontSize: '16px',
@@ -89,7 +90,7 @@ const Overview = ({ setIsOpen }) => {
             marginTop: 0, marginBottom: '24px',
             textAlign: 'justify',
           }}>
-            <strong>ASBL Codename</strong> is an iconic new launch at <strong>RTC X Roads, Hyderabad</strong>, offering premium 3 & 4 BHK luxury apartments designed for modern urban living. Located in the heart of the city, this high-rise development features contemporary architecture, spacious layouts, and world-class amenities, providing a perfect blend of comfort and convenience.
+            <strong>ASBL RTC X Road</strong> is an iconic new launch at <strong>RTC X Roads, Hyderabad</strong>, offering premium 3 & 4 BHK luxury apartments designed for modern urban living. Located in the heart of the city, this high-rise development features contemporary architecture, spacious layouts, and world-class amenities, providing a perfect blend of comfort and convenience.
             Spread across a thoughtfully planned development, it offers excellent connectivity to major IT hubs, reputed schools, hospitals, and entertainment zones, making it an ideal choice for families and professionals. With its prime central location, gated community living, and modern infrastructure, ASBL is set to become a landmark residential address in Hyderabad.
           </p>
 

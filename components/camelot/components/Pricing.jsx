@@ -75,7 +75,7 @@ const Pricing = ({ setIsOpen }) => {
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* NEW HEADING STYLE */}
-        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+        <div className="mb-6 md:mb-10 text-center">
           <h2 data-aos="flip-left" data-aos-delay="500" style={{
             fontFamily: "var(--font-jost), Montserrat, sans-serif", fontWeight: '700', fontSize: '17px',
             color: '#684C1B', letterSpacing: '0.1em',

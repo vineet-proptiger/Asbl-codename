@@ -33,14 +33,13 @@ const newAmenities = [
 
 const Amenities = () => {
   return (
-    <section id="amenities" style={{
-      padding: '72px 0',
+    <section id="amenities" className="py-10 md:py-[72px]" style={{
       background: '#fff',
     }}>
       <div className="container mx-auto px-4 md:px-8 max-w-[1200px]">
 
         {/* Section Header */}
-        <div style={{ marginBottom: '40px', textAlign: 'center' }} data-aos="fade-up">
+        <div className="mb-6 md:mb-10 text-center" data-aos="fade-up">
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '700', fontSize: '18px',
             color: '#684C1B', letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0,

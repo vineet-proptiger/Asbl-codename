@@ -47,14 +47,13 @@ const Gallery = ({ setIsOpen }) => {
   const visibleImages = showAll ? galleryImages : galleryImages.slice(0, 8)
 
   return (
-    <section id="gallery" style={{
-      padding: '72px 0',
+    <section id="gallery" className="py-10 md:py-[72px]" style={{
       background: '#fff',
     }}>
       <div className="container mx-auto px-4 md:px-8 max-w-[1200px]">
 
         {/* ── Header Row ── */}
-        <div className="flex flex-col items-center justify-center mb-10">
+        <div className="flex flex-col items-center justify-center mb-6 md:mb-10">
           <div className="flex items-center justify-center">
             <ArcIcon />
             <h2 data-aos="flip-left" data-aos-delay="500" style={{

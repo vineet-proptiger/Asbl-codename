@@ -97,8 +97,7 @@ const CarouselSection = ({ setIsOpen }) => {
   }, [isTransitioning]);
 
   return (
-    <section id="homes-designed" style={{
-      padding: '42px 0 72px 0',
+    <section id="homes-designed" className="py-10 md:pb-[72px] md:pt-[42px]" style={{
       background: '#f9f9f9',
       color: '#121212',
       fontFamily: "'bozon-reg', 'Austin', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif",
