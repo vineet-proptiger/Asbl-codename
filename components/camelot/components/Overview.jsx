@@ -90,60 +90,7 @@ const Overview = ({ setIsOpen }) => {
             textAlign: 'justify',
           }}>
             <strong>ASBL Codename</strong> is an iconic new launch at <strong>RTC X Roads, Hyderabad</strong>, offering premium 3 & 4 BHK luxury apartments designed for modern urban living. Located in the heart of the city, this high-rise development features contemporary architecture, spacious layouts, and world-class amenities, providing a perfect blend of comfort and convenience.
-            {isExpanded ? (
-              <>
-                {" "}Spread across a thoughtfully planned development, it offers excellent connectivity to major IT hubs, reputed schools, hospitals, and entertainment zones, making it an ideal choice for families and professionals. With its prime central location, gated community living, and modern infrastructure, ASBL is set to become a landmark residential address in Hyderabad.
-                {" "}
-                <button
-                  onClick={() => setIsExpanded(false)}
-                  style={{
-                    fontFamily: F_JOST,
-                    fontSize: '12px',
-                    fontWeight: '700',
-                    color: '#C9A96E',
-                    border: 'none',
-                    background: 'none',
-                    padding: '0 0 1px 0',
-                    borderBottom: '1px solid #C9A96E',
-                    cursor: 'pointer',
-                    marginLeft: '6px',
-                    letterSpacing: '0.05em',
-                    display: 'inline-block',
-                    transition: 'all 0.2s',
-                  }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = '#3A2A0E'}
-                  onMouseLeave={(e) => e.currentTarget.style.color = '#C9A96E'}
-                >
-                  READ LESS
-                </button>
-              </>
-            ) : (
-              <>
-                {" ... "}
-                <button
-                  onClick={() => setIsExpanded(true)}
-                  style={{
-                    fontFamily: F_JOST,
-                    fontSize: '12px',
-                    fontWeight: '700',
-                    color: '#C9A96E',
-                    border: 'none',
-                    background: 'none',
-                    padding: '0 0 1px 0',
-                    borderBottom: '1px solid #C9A96E',
-                    cursor: 'pointer',
-                    marginLeft: '6px',
-                    letterSpacing: '0.05em',
-                    display: 'inline-block',
-                    transition: 'all 0.2s',
-                  }}
-                  onMouseEnter={(e) => e.currentTarget.style.color = '#3A2A0E'}
-                  onMouseLeave={(e) => e.currentTarget.style.color = '#C9A96E'}
-                >
-                  READ MORE
-                </button>
-              </>
-            )}
+            Spread across a thoughtfully planned development, it offers excellent connectivity to major IT hubs, reputed schools, hospitals, and entertainment zones, making it an ideal choice for families and professionals. With its prime central location, gated community living, and modern infrastructure, ASBL is set to become a landmark residential address in Hyderabad.
           </p>
 
           {/* Info Box */}
