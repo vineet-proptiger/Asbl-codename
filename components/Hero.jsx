@@ -114,7 +114,7 @@ const Hero = ({ setIsOpen, customImages }) => {
                 letterSpacing: '0.02em'
               }}
                 data-aos="fade-up" data-aos-delay="300">
-                New Launch @ RTC X Cross Road
+                New Launch @ RTC X Cross Road,Hyderabad
               </p>
             </div>
 

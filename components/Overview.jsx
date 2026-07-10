@@ -223,9 +223,9 @@ const Overview = () => (
           <div style={{
             position: 'relative', borderRadius: '16px', overflow: 'hidden',
             boxShadow: '0 16px 48px rgba(0,0,0,0.14)',
-            border: '3px solid #fff', width: '100%', minHeight: '340px',
+            border: '3px solid #fff', width: '100%', minHeight: '340px', background: '#fff', padding: '3px'
           }}>
-            <Image src={overviewImage} alt="ASBL Codename" fill className="object-cover object-top"
+            <Image src={overviewImage} alt="ASBL Codename" fill className="object-contain object-center"
               sizes="(max-width: 1024px) 100vw, 33vw" priority />
             {/* <div style={{
               position: 'absolute', bottom: 0, left: 0, right: 0,
