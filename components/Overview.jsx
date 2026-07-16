@@ -219,32 +219,13 @@ const Overview = () => (
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
 
         {/* LEFT: Image */}
-        <div data-aos="fade-right" style={{ display: 'flex' }}>
+        <div data-aos="fade-right" style={{ display: 'flex', alignItems: 'center' }}>
           <div style={{
-            position: 'relative', borderRadius: '16px', overflow: 'hidden',
+            borderRadius: '16px', overflow: 'hidden',
             boxShadow: '0 16px 48px rgba(0,0,0,0.14)',
-            border: '3px solid #fff', width: '100%', minHeight: '340px', background: '#fff', padding: '3px'
+            width: '100%'
           }}>
-            <Image src={overviewImage} alt="ASBL Codename" fill className="object-contain object-center"
-              sizes="(max-width: 1024px) 100vw, 33vw" priority />
-            {/* <div style={{
-              position: 'absolute', bottom: 0, left: 0, right: 0,
-              background: 'linear-gradient(to top, rgba(3, 147, 148, 0.92), transparent)',
-              padding: '28px 16px 14px',
-            }}>
-              <p style={{
-                fontFamily: F_JOST, color: '#fff', fontSize: '13px',
-                fontWeight: '700', margin: 0, letterSpacing: '0.04em'
-              }}>
-                GIFT City · SEZ Zone
-              </p>
-              <p style={{
-                fontFamily: F_SANS, color: 'rgba(255,255,255,0.8)',
-                fontSize: '11px', margin: '2px 0 0'
-              }}>
-                Ahmedabad, Gujarat
-              </p>
-            </div> */}
+            <img src={overviewImage} alt="ASBL Codename" className="w-full h-auto block" />
           </div>
         </div>
 
