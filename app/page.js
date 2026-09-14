@@ -75,7 +75,7 @@ export default function Home() {
           </svg>
         </button>
         <a
-          href="https://wa.me/919718344024?text=Hi%20I%20am%20interested%20in%20ASBL%20Codename%20Legacy%2C%20Hyderabad"
+          href="https://wa.me/919560582493?text=Hi%20I%20am%20interested%20in%20ASBL%20Codename%20Legacy%2C%20Hyderabad"
           target="_blank" rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center py-2 !px-0 text-white transition-all hover:bg-white hover:text-[#25D366] hover:border hover:border-[#25D366]"
           style={{ background: '#25D366', fontFamily: 'var(--font-sans)' }}
