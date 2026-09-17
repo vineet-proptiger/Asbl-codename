@@ -353,12 +353,12 @@ const Hero = ({ setIsOpen }) => {
         <>
             {/* Main Heading */}
             <h1 className="hero-title" data-aos="zoom-in-up" data-aos-delay="0">
-             ASBL RTC Crossroad
+             ASBL Legacy RTC X Roads
             </h1>
 
             {/* Subtitle */}
             <p className="hero-subtitle" data-aos="fade-right" data-aos-delay="100">
-              <span style={{ fontSize: '0.85em', fontWeight: 500, textTransform: 'none' }}>New Launch @ RTC X Cross Road,Hyderabad</span>
+              <span style={{ fontSize: '0.85em', fontWeight: 500, textTransform: 'none' }}>New Launch @ RTC Cross Roads,Hyderabad</span>
             </p>
             {/* Bullet Points */}
             <div className="hero-bullets" style={{ marginBottom: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -394,7 +394,7 @@ const Hero = ({ setIsOpen }) => {
                   className="btn-gold-outline hero-btn-one"
                   style={{ fontSize: '14px', padding: '11px 22px', pointerEvents: 'none', fontWeight: '700', textTransform: 'none' }}
                 >
-                  Price starts <span className="hero-price-amt" style={{ fontSize: '15px', marginLeft: '6px' }}>₹ 1.8 Cr*</span>
+                  Price starts <span className="hero-price-amt" style={{ fontSize: '15px', marginLeft: '6px' }}>₹ 1.99Cr*</span>
                 </div>
               </div>
 

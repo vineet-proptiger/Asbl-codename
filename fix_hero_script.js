@@ -61,7 +61,7 @@ if (targetIndex !== -1) {
                   className="btn-gold-outline hero-btn-one"
                   style={{ fontSize: '14px', padding: '11px 22px', pointerEvents: 'none', fontWeight: '700', textTransform: 'none' }}
                 >
-                  Price starts <span className="hero-price-amt" style={{ fontSize: '15px', marginLeft: '6px' }}>₹ 1.8 Cr*</span>
+                  Price starts <span className="hero-price-amt" style={{ fontSize: '15px', marginLeft: '6px' }}>₹ 1.99Cr*</span>
                 </div>
               </div>
 

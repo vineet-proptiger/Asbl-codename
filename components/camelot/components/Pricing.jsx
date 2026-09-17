@@ -8,7 +8,7 @@ const units = [
   {
     type: "Luxe 3 BHK",
     size: "1970 Sq.ft.",
-    price: "₹ 1.8 Cr* Onwards",
+    price: "₹ 1.99Cr* Onwards",
     oldPrice: null,
     btnText: "Enquire Now",
     features: [

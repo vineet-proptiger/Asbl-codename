@@ -44,7 +44,7 @@ const CurvedCorners = ({ bg = '#fff' }) => {
 const infoItems = [
   { label: 'LOCATION',   value: 'RTC CROSS ROADS, HYDERABAD' },
   { label: 'TYPE',       value: '3 & 4 BHK APARTMENTS'  },
-  { label: 'PRICE',      value: 'FROM ₹1.8 CR* ONWARDS'   },
+  { label: 'PRICE',      value: 'FROM ₹1.99Cr* ONWARDS'   },
 ]
 
 const Overview = ({ setIsOpen }) => (

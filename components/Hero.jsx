@@ -213,7 +213,7 @@ const Hero = ({ setIsOpen, customImages }) => {
                   fontFamily: F_JOST,
                   lineHeight: 1,
                 }}>
-                  1.8 Cr*
+                  1.99Cr*
                 </span>
               </div>
             </div>

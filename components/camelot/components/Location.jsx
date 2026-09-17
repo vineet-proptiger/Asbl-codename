@@ -50,10 +50,10 @@ const categories = [
     label: 'Convenient Travel',
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" width="16" height="16"><path d="M3 12h18M3 6h18M3 18h18" /></svg>,
     items: [
-      { name: 'RTC X Roads', dist: 'Direct Access' },
-      { name: 'Secunderabad Railway Station', dist: '5 km' },
-      { name: 'MG Bus Station', dist: '4 km' },
-      { name: 'Rajiv Gandhi International Airport', dist: '30 km' }
+      { name: 'RTC X Roads Metro Station', dist: '3 min' },
+      { name: 'Secunderabad Railway Station', dist: '10 min' },
+      { name: 'Mahatma Gandhi Bus Station (MGBS)', dist: '15 min' },
+      { name: 'Nampally Railway Station', dist: '15 min' }
     ],
   },
 ]
