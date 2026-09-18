@@ -3,8 +3,8 @@ import { Open_Sans, Montserrat, Cormorant_Garamond } from 'next/font/google'
 import localFont from 'next/font/local'
 import { GoogleTagManager } from '@next/third-parties/google'
 import Script from 'next/script'
-import { faviconImages } from '../lib/images'
-import { CITY_DISPLAY } from '../lib/config'
+import { faviconImages } from '../lib/new-launch-hyderabad/images'
+import { CITY_DISPLAY } from '../lib/new-launch-hyderabad/config'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -34,7 +34,7 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  title: 'ASBL RTC X Road New Launch | 3 & 4 BHK Luxury Apartments, Hyderabad',
+  title: 'ASBL RTC X Roads New Launch | 3 & 4 BHK Luxury Apartments, Hyderabad',
   description: 'ASBL Codename  — Sky-high luxury residences at RTC X Cross Road, Hyderabad. 3 BHK & 4 BHK luxury apartments starting ₹1.99Cr*. Iconic high-rise skyline living with premium finish and world-class amenities.',
   icons: {
     icon: faviconImages.icon,

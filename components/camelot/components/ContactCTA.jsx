@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
-import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../../../lib/config'
-import { buildTrackingFields } from '../../../lib/formMeta'
+import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../../../lib/camelot/lib/config'
+import { buildTrackingFields } from '../../../lib/camelot/lib/formMeta'
 
 const GOLD = 'var(--color-gold)'
 const GOLD_DARK = 'var(--color-gold-dark)'

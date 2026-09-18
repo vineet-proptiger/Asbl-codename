@@ -5,7 +5,7 @@
 // ═══════════════════════════════════════════════════════════════
 
 /* ─── CONFIG ─────────────────────────────────────────────────── */
-import { SHEET_WEBHOOK, PROPTIGER_URL, CITY_ID, CITY_SLUG } from '../../../lib/config'
+import { SHEET_WEBHOOK, PROPTIGER_URL, CITY_ID, CITY_SLUG } from '../../../lib/new-launch-hyderabad/config'
 /* ────────────────────────────────────────────────────────────── */
 
 function clean(v) {
@@ -36,9 +36,9 @@ export async function POST(request) {
     }
 
     /* ── Required fields ── */
-    let phone = get('phone').replace(/\D/g, '')
-    if (phone.length > 10) phone = phone.slice(-10)
-    if (phone.length > 0 && phone.length < 10) {
+    let phone = get('phone').replace(/[^\d+]/g, '')
+    // Note: The phone number might include the country code now, so it will be 11-15 digits with a + sign.
+    if (phone.length === 0 || phone === '+') {
       return Response.json({ status: false, msg: 'Invalid phone number' })
     }
     const email = get('email')
@@ -57,7 +57,7 @@ export async function POST(request) {
     const projectName = get('projectName')
     const nameParts = fullName.trim().split(/\s+/)
     const firstName = nameParts[0] || ''
-    const lastName = nameParts[1] || firstName
+    const lastName = nameParts.slice(1).join(' ') || ''
 
     /* ── Tracking ── */
     const utmSource = get('utm_source') || 'Microsite'

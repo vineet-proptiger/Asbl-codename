@@ -72,7 +72,7 @@ const Overview = ({ setIsOpen }) => {
               textTransform: 'uppercase', margin: '0 0 10px 0',
               display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: '10px'
             }}>
-              ASBL RTC X Road
+              ASBL RTC X Roads
             </h2>
             {/* <h3 style={{
               fontFamily: F_JOST, fontWeight: '600', fontSize: '16px',

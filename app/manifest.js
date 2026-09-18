@@ -1,5 +1,5 @@
-import { PROJECT_NAME } from '../lib/config'
-import { faviconImages } from '../lib/images'
+import { PROJECT_NAME } from '../lib/new-launch-hyderabad/config'
+import { faviconImages } from '../lib/new-launch-hyderabad/images'
 
 export default function manifest() {
   return {

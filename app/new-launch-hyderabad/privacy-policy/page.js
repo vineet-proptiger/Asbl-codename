@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
-import AosInit from '../../../components/AosInit'
+import AosInit from '../../../components/new-launch-hyderabad/components/AosInit'
 
 const GOLD = 'var(--color-gold)'
 const GOLD_DARK = 'var(--color-gold-dark)'
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
 
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between h-[80px]">
           <Link href="/new-launch-hyderabad" className="flex items-center">
-            <img src="/images/logo/logo.webp" alt="ASBL Codename" className="h-10 sm:h-14 w-auto object-contain" />
+            <img src="/new-launch-hyderabad/logo/Logo.webp" alt="ASBL Codename" className="h-10 sm:h-14 w-auto object-contain" />
           </Link>
           <Link
             href="/new-launch-hyderabad"
@@ -44,7 +44,7 @@ export default function PrivacyPolicy() {
       <section
         className="relative flex items-center justify-center text-center min-h-[140px] sm:min-h-[200px]"
         style={{
-          backgroundImage: 'url(/images/hero/banner.webp)',
+          backgroundImage: 'url(/new-launch-hyderabad/hero/banner1.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

@@ -1,6 +1,6 @@
 import './camelot.css'
 import { Open_Sans, Montserrat, Cormorant_Garamond } from 'next/font/google'
-import { CITY_DISPLAY } from '../../lib/config'
+import { CITY_DISPLAY } from '../../lib/camelot/lib/config'
 import localFont from 'next/font/local'
 import { GoogleTagManager } from '@next/third-parties/google'
 import Script from 'next/script'
