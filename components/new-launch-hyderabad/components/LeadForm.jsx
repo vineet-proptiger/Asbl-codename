@@ -1,7 +1,5 @@
 'use client'
 import React, { useState } from 'react'
-import PhoneInput from 'react-phone-input-2'
-import 'react-phone-input-2/lib/style.css'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../../../lib/new-launch-hyderabad/config'
 import { buildTrackingFields } from '../../../lib/new-launch-hyderabad/formMeta'
 
@@ -16,31 +14,23 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormData({ ...formData, [name]: value })
-  }
-
-  const handlePhoneChange = (phone) => {
-    setFormData({ ...formData, phone })
+    if (name === 'phone') {
+      setFormData({ ...formData, phone: value.replace(/\D/g, '').slice(0, 10) })
+    } else {
+      setFormData({ ...formData, [name]: value })
+    }
   }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     
-    // Generic validation since different countries have different lengths
-    if (formData.phone.length < 10) {
-      setError('Please enter a valid mobile number.')
+    if (formData.phone.length !== 10) {
+      setError('Please enter a valid 10-digit mobile number.')
       return
     }
 
-    // Optional: Indian strict validation if country code is India (91)
-    if (formData.phone.startsWith('91') && formData.phone.length === 12) {
-      const mobilePart = formData.phone.slice(2)
-      if (!/^[6-9]\d{9}$/.test(mobilePart)) {
-        setError('Indian phone number must start with 6, 7, 8, or 9')
-        return
-      }
-    } else if (formData.phone.startsWith('91') && formData.phone.length !== 12) {
-      setError('Please enter a valid 10-digit Indian mobile number.')
+    if (!/^[6-9]\d{9}$/.test(formData.phone)) {
+      setError('Mobile number must start with 6, 7, 8, or 9.')
       return
     }
 
@@ -86,8 +76,8 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
       }
     }
 
-    // formData.phone already includes country code from react-phone-input-2
-    const fullPhone = `+${formData.phone}`
+    // Prepend +91 statically to 10-digit Indian mobile number
+    const fullPhone = '+91' + formData.phone
 
     const payload = new FormData()
     payload.append('fullname', formData.fullname)
@@ -198,45 +188,17 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Details', isTransp
       <input type="email" name="email" placeholder="Email Id (optional)" value={formData.email} onChange={handleChange}
         className={dynamicInputClass} style={dynamicInputStyle} />
       
-      {/* react-phone-input-2 wrapper */}
-      <div className={wrapperClass} style={dynamicInputStyle}>
-        <PhoneInput
-          country={'in'}
-          value={formData.phone}
-          onChange={handlePhoneChange}
-          placeholder="Phone Number"
-          enableSearch={true}
-          disableSearchIcon={true}
-          searchPlaceholder="Search country..."
-          inputStyle={{
-            width: '100%',
-            height: isTransparent ? '46px' : '42px',
-            backgroundColor: 'transparent',
-            border: 'none',
-            color: 'inherit',
-            fontFamily: F_SANS,
-            fontSize: '15px',
-            paddingLeft: '48px'
-          }}
-          buttonStyle={{
-            backgroundColor: 'transparent',
-            border: 'none',
-            borderRight: isTransparent ? '1px solid rgba(255, 255, 255, 0.25)' : '1px solid rgba(156, 163, 175, 0.3)',
-            borderRadius: isTransparent ? '8px 0 0 8px' : '6px 0 0 6px',
-            padding: '0 4px'
-          }}
-          dropdownStyle={{
-            color: '#111',
-            fontFamily: F_SANS,
-            width: '300px',
-            borderRadius: '8px',
-            boxShadow: '0 10px 25px rgba(0,0,0,0.15)'
-          }}
-          containerStyle={{
-            width: '100%',
-          }}
-        />
-      </div>
+      <input
+        type="tel"
+        name="phone"
+        required
+        placeholder="Phone Number"
+        maxLength={10}
+        value={formData.phone}
+        onChange={handleChange}
+        className={dynamicInputClass}
+        style={dynamicInputStyle}
+      />
 
       {error && <p className="text-red-500 text-xs mt-[-4px] mb-2" style={{ fontFamily: F_SANS }}>{error}</p>}
 
